@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c451153bd78864396ebac32c76e2b0, type: 3}
+  m_Name: Skill_Fire_Arrow
+  m_EditorClassIdentifier: 
+  myName: Skill_Fire_Arrow
+  myDesc: Skill Fire Arrow
+  myIcon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  itemType: 3
+  itemPrice: 1
+  itemLevel: 0
+  maxAmount: 1
+  isPriceTl: 0
+  isPasif: 0
+  skill_Object: {fileID: 7309543395729473520, guid: 97d195773dc809b4391c5513b63a0ebb, type: 3}
+  slotEffect: {fileID: 0}
+  skillUI: {fileID: 4351905557009563840, guid: 7350f0588ea34294aab860f9951a07e1, type: 3}

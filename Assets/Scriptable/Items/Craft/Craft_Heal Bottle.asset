@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ca5823e0e3d8142b54c37fc18841e7, type: 3}
+  m_Name: Craft_Heal Bottle
+  m_EditorClassIdentifier: 
+  myName: Craft Heal Bottle
+  myDesc: Crafting Heal Bottle
+  myIcon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  itemType: 4
+  itemPrice: 1
+  maxAmount: 1
+  isPriceTl: 0
+  myObject: {fileID: 11400000, guid: 06ffde7b8caa39b4983a7d0ae774cf2e, type: 2}
+  yapimAdet: 1
+  myContainer: {fileID: 11400000, guid: bf9ea0fe8f1d7774a99609b8c2f71aac, type: 2}
+  craftMalzemes:
+  - item: {fileID: 11400000, guid: e742dca3c26bec84a96f8ec1452400e7, type: 2}
+    amount: 2
+  - item: {fileID: 11400000, guid: 74aa143bac832e54cbb3a7443ab2fca0, type: 2}
+    amount: 1
