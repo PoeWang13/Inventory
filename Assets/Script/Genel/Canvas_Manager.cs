@@ -199,6 +199,10 @@ public class Canvas_Manager : MonoBehaviour
     public void AddSkill(Skill_Item skill_Item)
     {
         Instantiate(skill_Item.skillUI, skillParent).SetSkillUI();
+        if (skill_Item.IsPasif())
+        {
+            skill_Item.UseItem(null, player.myInventory);
+        }
     }
     #endregion
 

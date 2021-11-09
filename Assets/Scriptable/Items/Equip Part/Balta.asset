@@ -28,6 +28,6 @@ MonoBehaviour:
       myStatCore: 1
     isPercent: 0
   - stat:
-      statName: Life
+      statName: Str
       myStatCore: 100
     isPercent: 1

@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 8270893881814204038}
   - component: {fileID: 4351905557009563840}
   m_Layer: 5
-  m_Name: FireArrowUI
+  m_Name: UI_Skill_FireArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

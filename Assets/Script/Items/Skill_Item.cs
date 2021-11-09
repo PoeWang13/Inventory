@@ -1,5 +1,4 @@
-﻿
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
@@ -7,7 +6,6 @@ using System.Collections.Generic;
 [CreateAssetMenu(menuName = "Item/Skill Item")]
 public class Skill_Item : Item
 {
-    public bool isPasif;
     public Skill_Object skill_Object;
     public GameObject slotEffect;
     public Skill_UI skillUI;
@@ -21,5 +19,13 @@ public class Skill_Item : Item
         {
             mySlot.SlotHasEffect(slotEffect);
         }
+    }
+    public bool IsPasif()
+    {
+        if (skill_Object != null)
+        {
+            return skill_Object.IsPasif();
+        }
+        return false;
     }
 }

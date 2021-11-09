@@ -8,6 +8,10 @@ public class Skill_Slot : Slot
     /// skill slot       : Sol tık - taşı + sağ tık - kullan
     public override void LeftClick()
     {
+        if ((item as Skill_Item).IsPasif())
+        {
+            return;
+        }
         if (coolDownImage.fillAmount > 0)
         {
             Canvas_Manager.Instance.CloseCarrierSlot();

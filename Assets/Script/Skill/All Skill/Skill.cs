@@ -7,8 +7,9 @@ using System.Collections.Generic;
 public class Skill
 {
     [Header("Script Atamaları")]
+    public bool isPasif;
     public int mana;
     public int coolDown;
-    public float coolDownNext;
-    public List<Slot> mySlots = new List<Slot>();
+    [HideInInspector] public float coolDownNext;
+    [HideInInspector] public List<Slot> mySlots = new List<Slot>();
 }

@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7309543395729473521}
-  - component: {fileID: 7309543395729473520}
+  - component: {fileID: 6442121168110384185}
   m_Layer: 0
-  m_Name: Fire Arrow Object
+  m_Name: Skill_Object_Healer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7309543395729473520
+--- !u!114 &6442121168110384185
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,15 +40,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7309543395729473534}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f936bc21457eed0458f478bfce08fb2d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0bac2767331a3574589672db576ae51c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   exitPos: {x: 0, y: 0, z: 0}
   myOwner: {fileID: 0}
-  fire_Arrow_Skill:
+  skill_Healer:
+    isPasif: 1
     mana: 5
-    coolDown: 3
+    coolDown: 5
     coolDownNext: 0
-    mySlots:
-    - {fileID: 0}
-    fireArrowPrefab: {fileID: -8311035146950524799, guid: eb5fc72db8379a24c8c7e4e70f9c4794, type: 3}
+    mySlots: []
+    healAmount: 1
+    isPercent: 0

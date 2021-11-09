@@ -32,4 +32,8 @@ public class Skill_Object : MonoBehaviour
     {
 
     }
+    public virtual bool IsPasif()
+    {
+        return false;
+    }
 }

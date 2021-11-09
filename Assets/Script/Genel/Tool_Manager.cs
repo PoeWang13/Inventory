@@ -66,7 +66,7 @@ public class Tool_Manager : MonoBehaviour
         if (slot.item is Skill_Item)
         {
             // Item Skill Pasif - Active
-            sb.Append("<color=yellow>" + ((slot.item as Skill_Item).isPasif ? "Pasif" : "Active") + "</color>");
+            sb.Append("<color=yellow>" + ((slot.item as Skill_Item).IsPasif() ? "Pasif" : "Active") + "</color>");
             sb.AppendLine();
         }
         // Item Price

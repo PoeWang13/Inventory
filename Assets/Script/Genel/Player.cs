@@ -35,7 +35,6 @@ public class Player : Owner
     public int speedMove;
     public int speedTurn;
     public Vector3 direction;
-    public LayerMask layerMask;
     private float statArttir = 5;
     private float statArttirNext;
     public List<SkillDurum> skilller = new List<SkillDurum>();

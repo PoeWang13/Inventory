@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c451153bd78864396ebac32c76e2b0, type: 3}
+  m_Name: Skill_Healer
+  m_EditorClassIdentifier: 
+  myName: Skill_Healer
+  myDesc: Skill Healer
+  myIcon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  itemType: 3
+  itemPrice: 1
+  maxAmount: 1
+  isPriceTl: 0
+  isPasif: 0
+  skill_Object: {fileID: 6442121168110384185, guid: 7aa15c755a1f2e24289fe9444de61ff8, type: 3}
+  slotEffect: {fileID: 0}
+  skillUI: {fileID: 4351905557009563840, guid: c65260c419c80c54e9ea988f51f4c3bc, type: 3}

@@ -20,9 +20,12 @@ public class Owner : MonoBehaviour
     }
     public void CreateSkillObject(Skill_Item mySkill_Item)
     {
-        skillStart = true;
-        canMove = false;
-        canTurn = false;
+        if (!mySkill_Item.IsPasif())
+        {
+            skillStart = true;
+            canMove = false;
+            canTurn = false;
+        }
         Instantiate(mySkill_Item.skill_Object, transform).GetComponent<Skill_Object>().CreateSkill(this, exitPos.position, transform.forward);
     }
     public Stat MyStat(string statName)

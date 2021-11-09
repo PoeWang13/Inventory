@@ -15,6 +15,12 @@ public class Stat
     public int StatValue { get { return statCore; } }
     private int statAdd;
     private int statAddYuzde;
+    public void SetStatCore(int set)
+    {
+        myStatCore = set;
+        CalculateStatValue();
+        OnStatChanced?.Invoke(this, System.EventArgs.Empty);
+    }
     public void AddStatCore(int add)
     {
         myStatCore += add;

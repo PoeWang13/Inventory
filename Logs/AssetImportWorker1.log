@@ -1,0 +1,1516 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.8f1 (507919d4fff5) revision 5273881'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 19043.1288; Version 2009; 64bit' Language: 'tr' Physical Memory: 32600 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\2020.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/Inventory
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+49963
+Successfully changed project path to: D:/Inventory
+D:/Inventory
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 21.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.8f1 (507919d4fff5)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Inventory/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 Super with Max-Q Design (ID=0x1e93)
+    Vendor:   
+    VRAM:     8010 MB
+    Driver:   27.21.14.6242
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/2020.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56124
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001949 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 22.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.868 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000424 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.730 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1174 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.5 MB.
+System memory in use after: 60.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1617.
+Total: 1.539800 ms (FindLiveObjects: 0.133500 ms CreateObjectMapping: 0.036200 ms MarkObjects: 1.306600 ms  DeleteObjects: 0.062700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scriptable/Items/Equip Part/Balta.asset
+  artifactKey: Guid(d9094795f5049d943a71e52bc6eee918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Equip Part/Balta.asset using Guid(d9094795f5049d943a71e52bc6eee918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ced26013d88854c4c8881051b532638') in 0.037870 seconds
+  Import took 0.039648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.312982 seconds.
+  path: Assets/Scriptable/Items/Equip Part/Balta.asset
+  artifactKey: Guid(d9094795f5049d943a71e52bc6eee918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Equip Part/Balta.asset using Guid(d9094795f5049d943a71e52bc6eee918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ced26013d88854c4c8881051b532638') in 0.002141 seconds
+  Import took 0.004213 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000554 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.783 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.2 MB.
+System memory in use after: 59.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1620.
+Total: 1.365100 ms (FindLiveObjects: 0.118300 ms CreateObjectMapping: 0.034000 ms MarkObjects: 1.175000 ms  DeleteObjects: 0.037200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 158.307637 seconds.
+  path: Assets/Scriptable/Items/Skill Container/Container_Skill_Fire_Arrow.asset
+  artifactKey: Guid(4d6c2bb4ac9cd5544a6817245f13cac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill Container/Container_Skill_Fire_Arrow.asset using Guid(4d6c2bb4ac9cd5544a6817245f13cac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5a875795ea64f26980165ea775bb706') in 0.078642 seconds
+  Import took 0.081106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.447952 seconds.
+  path: Assets/Scriptable/Items/Skill Container/Container_Skill_Fire_Arrow 1.asset
+  artifactKey: Guid(97962d0ff9dae3846b71350caeda447b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill Container/Container_Skill_Fire_Arrow 1.asset using Guid(97962d0ff9dae3846b71350caeda447b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea3080f3f122b089b60e84d12c526c07') in 0.032441 seconds
+  Import took 0.034720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.493143 seconds.
+  path: Assets/Scriptable/Items/Skill Container/Container_Skill_Healer.asset
+  artifactKey: Guid(97962d0ff9dae3846b71350caeda447b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill Container/Container_Skill_Healer.asset using Guid(97962d0ff9dae3846b71350caeda447b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c390db3df4a45b97a93a22c839e3fbb1') in 0.034182 seconds
+  Import took 0.036245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.636482 seconds.
+  path: Assets/Scriptable/Items/Skill Container/Container_Skill_Healer.asset
+  artifactKey: Guid(97962d0ff9dae3846b71350caeda447b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill Container/Container_Skill_Healer.asset using Guid(97962d0ff9dae3846b71350caeda447b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '115ac21240ac7c1449209eddc3664925') in 0.026364 seconds
+  Import took 0.028682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.936031 seconds.
+  path: Assets/Scriptable/Items/Skill/Skill_Fire_Arrow 1.asset
+  artifactKey: Guid(3b1ac859b765ca645803c8d013dc194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill/Skill_Fire_Arrow 1.asset using Guid(3b1ac859b765ca645803c8d013dc194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a7506b55176adea7403594d60d2bd3e') in 0.031857 seconds
+  Import took 0.034148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.013447 seconds.
+  path: Assets/Scriptable/Items/Skill/Skill_Healer.asset
+  artifactKey: Guid(3b1ac859b765ca645803c8d013dc194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill/Skill_Healer.asset using Guid(3b1ac859b765ca645803c8d013dc194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96828894a5db7bad724ef4865f9a91b5') in 0.030244 seconds
+  Import took 0.032227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.007755 seconds.
+  path: Assets/Scriptable/Items/Skill/Skill_Healer.asset
+  artifactKey: Guid(3b1ac859b765ca645803c8d013dc194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill/Skill_Healer.asset using Guid(3b1ac859b765ca645803c8d013dc194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f693c1a984e520d8e2083edb54398422') in 0.026105 seconds
+  Import took 0.028764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.177462 seconds.
+  path: Assets/Prefab/UI/Skill UI/FireArrowUI.prefab
+  artifactKey: Guid(7350f0588ea34294aab860f9951a07e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Skill UI/FireArrowUI.prefab using Guid(7350f0588ea34294aab860f9951a07e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1483df7f5deebe220962b87889e68a6e') in 0.042861 seconds
+  Import took 0.045867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001073 seconds.
+  path: Assets/Prefab/UI/Skill UI/FireArrowUI.prefab
+  artifactKey: Guid(7350f0588ea34294aab860f9951a07e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Skill UI/FireArrowUI.prefab using Guid(7350f0588ea34294aab860f9951a07e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1483df7f5deebe220962b87889e68a6e') in 0.034586 seconds
+  Import took 0.038151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.865736 seconds.
+  path: Assets/Prefab/UI/Skill UI/FireArrowUI 1.prefab
+  artifactKey: Guid(c65260c419c80c54e9ea988f51f4c3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Skill UI/FireArrowUI 1.prefab using Guid(c65260c419c80c54e9ea988f51f4c3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b90a80b86bca67cb415bb1e5790b41') in 0.032375 seconds
+  Import took 0.035132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.735422 seconds.
+  path: Assets/Prefab/UI/Skill UI/UI_Skill_Healer.prefab
+  artifactKey: Guid(c65260c419c80c54e9ea988f51f4c3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Skill UI/UI_Skill_Healer.prefab using Guid(c65260c419c80c54e9ea988f51f4c3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '702367df332f2a90d56fce8676c2ece4') in 0.039214 seconds
+  Import took 0.042291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.589631 seconds.
+  path: Assets/Prefab/UI/Skill UI/UI_Skill_FireArrow.prefab
+  artifactKey: Guid(7350f0588ea34294aab860f9951a07e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Skill UI/UI_Skill_FireArrow.prefab using Guid(7350f0588ea34294aab860f9951a07e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1df6564beefa2ee679d991f1456a7c2') in 0.029840 seconds
+  Import took 0.031905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.947941 seconds.
+  path: Assets/Prefab/UI/Skill UI/UI_Skill_Healer.prefab
+  artifactKey: Guid(c65260c419c80c54e9ea988f51f4c3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Skill UI/UI_Skill_Healer.prefab using Guid(c65260c419c80c54e9ea988f51f4c3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eca8dc30453d31c83f8e96ac19ff8f0') in 0.028071 seconds
+  Import took 0.030686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006408 seconds.
+  path: Assets/Prefab/UI/Skill UI/UI_Skill_Healer.prefab
+  artifactKey: Guid(c65260c419c80c54e9ea988f51f4c3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Skill UI/UI_Skill_Healer.prefab using Guid(c65260c419c80c54e9ea988f51f4c3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eca8dc30453d31c83f8e96ac19ff8f0') in 0.026692 seconds
+  Import took 0.029146 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.732155 seconds.
+  path: Assets/Prefab/UI/Skill UI/UI_Skill_Healer.prefab
+  artifactKey: Guid(c65260c419c80c54e9ea988f51f4c3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Skill UI/UI_Skill_Healer.prefab using Guid(c65260c419c80c54e9ea988f51f4c3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da87d04f7e928944848f8948868638a5') in 0.029628 seconds
+  Import took 0.032023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.471044 seconds.
+  path: Assets/Prefab/Skill Object/Fire Arrow Object 1.prefab
+  artifactKey: Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Fire Arrow Object 1.prefab using Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeb74a8d3d5949582b3ac88e30407f02') in 0.008483 seconds
+  Import took 0.010718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005805 seconds.
+  path: Assets/Prefab/Skill Object/Fire Arrow Object 1.prefab
+  artifactKey: Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Fire Arrow Object 1.prefab using Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeb74a8d3d5949582b3ac88e30407f02') in 0.002793 seconds
+  Import took 0.005459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.758833 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Healer.prefab
+  artifactKey: Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Healer.prefab using Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e6c32c23aefa45f306a28ca53f8af77') in 0.007045 seconds
+  Import took 0.009249 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004254 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Healer.prefab
+  artifactKey: Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Healer.prefab using Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e6c32c23aefa45f306a28ca53f8af77') in 0.002931 seconds
+  Import took 0.005872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.242273 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Fire Arrow.prefab
+  artifactKey: Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Fire Arrow.prefab using Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1091885aedefac6f8bd91d14f1706b9a') in 0.006771 seconds
+  Import took 0.008937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004362 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Fire Arrow.prefab
+  artifactKey: Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Fire Arrow.prefab using Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1091885aedefac6f8bd91d14f1706b9a') in 0.003681 seconds
+  Import took 0.006092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.566445 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Fire_Arrow.prefab
+  artifactKey: Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Fire_Arrow.prefab using Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '573dbbf34983421791d5b982699e866a') in 0.007062 seconds
+  Import took 0.009043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004286 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Fire_Arrow.prefab
+  artifactKey: Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Fire_Arrow.prefab using Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '573dbbf34983421791d5b982699e866a') in 0.003515 seconds
+  Import took 0.006291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 103.610078 seconds.
+  path: Assets/Scriptable/Items/Skill/Skill_Healer.asset
+  artifactKey: Guid(3b1ac859b765ca645803c8d013dc194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill/Skill_Healer.asset using Guid(3b1ac859b765ca645803c8d013dc194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5e63ec3c070d72305d29ff9dbd9acec') in 0.023387 seconds
+  Import took 0.025899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.580444 seconds.
+  path: Assets/Script/Skill/All Skill Object/Healer.cs
+  artifactKey: Guid(de98a912be3e3ba4d82037bd158ad880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Skill/All Skill Object/Healer.cs using Guid(de98a912be3e3ba4d82037bd158ad880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfbdf58f19070c0a63488842c67e64a5') in 0.011309 seconds
+  Import took 0.015808 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000335 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.704 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1157 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.3 MB.
+System memory in use after: 59.4 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1625.
+Total: 1.617800 ms (FindLiveObjects: 0.160100 ms CreateObjectMapping: 0.042800 ms MarkObjects: 1.349000 ms  DeleteObjects: 0.064300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.641384 seconds.
+  path: Assets/Script/Skill/All Skill Object/Buffer.cs
+  artifactKey: Guid(3ba60d283a5facf44b7487d25e8c75d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Skill/All Skill Object/Buffer.cs using Guid(3ba60d283a5facf44b7487d25e8c75d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '113995df16fc216af304494d254fa1f2') in 0.008547 seconds
+  Import took 0.011029 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000393 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.770 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.3 MB.
+System memory in use after: 59.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1629.
+Total: 1.695700 ms (FindLiveObjects: 0.126500 ms CreateObjectMapping: 0.038800 ms MarkObjects: 1.486100 ms  DeleteObjects: 0.043600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.694811 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Healer 1.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Healer 1.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9775985ec8f6bd1fd2419b9f6d6d495d') in 0.028220 seconds
+  Import took 0.030858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001505 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Healer 1.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Healer 1.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9775985ec8f6bd1fd2419b9f6d6d495d') in 0.003034 seconds
+  Import took 0.005308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.011812 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb980c5b5241d8de0f8d87a571decc08') in 0.006930 seconds
+  Import took 0.009059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004660 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb980c5b5241d8de0f8d87a571decc08') in 0.003330 seconds
+  Import took 0.006415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.900163 seconds.
+  path: Assets/Prefab/UI/Skill UI/UI_Skill_Healer 1.prefab
+  artifactKey: Guid(88d2555f8a396e143ab56104282c0ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Skill UI/UI_Skill_Healer 1.prefab using Guid(88d2555f8a396e143ab56104282c0ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b0b23c515440266e87b9af1090293cf') in 0.079327 seconds
+  Import took 0.081431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.636066 seconds.
+  path: Assets/Prefab/UI/Skill UI/UI_Skill_Buffer.prefab
+  artifactKey: Guid(88d2555f8a396e143ab56104282c0ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Skill UI/UI_Skill_Buffer.prefab using Guid(88d2555f8a396e143ab56104282c0ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f69a1d4c3fcec121991fad9887e4e08a') in 0.040851 seconds
+  Import took 0.043049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.203617 seconds.
+  path: Assets/Script/Skill/All Skill/Skill_Buffer.cs
+  artifactKey: Guid(5de1ef19a12213c4587b61201dd8637c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Skill/All Skill/Skill_Buffer.cs using Guid(5de1ef19a12213c4587b61201dd8637c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddc5e42a01e53dae21091dd59946a1a9') in 0.015307 seconds
+  Import took 0.017552 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000374 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.715 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1159 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.4 MB.
+System memory in use after: 59.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1633.
+Total: 1.416300 ms (FindLiveObjects: 0.146900 ms CreateObjectMapping: 0.035500 ms MarkObjects: 1.190900 ms  DeleteObjects: 0.042100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.030837 seconds.
+  path: Assets/Script/Skill/All Skill/Fire_Arrow_Skill.cs
+  artifactKey: Guid(a74cbcd02a5fc764e8518d13214086e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Skill/All Skill/Fire_Arrow_Skill.cs using Guid(a74cbcd02a5fc764e8518d13214086e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f88f5abfdcb58ebbb7e223b097f17a41') in 0.006416 seconds
+  Import took 0.008058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.499315 seconds.
+  path: Assets/Script/Skill/All Skill/Skill_Fire_Arrow.cs
+  artifactKey: Guid(a6eaa72c4cedcf54e9b63c36ac4cc6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Skill/All Skill/Skill_Fire_Arrow.cs using Guid(a6eaa72c4cedcf54e9b63c36ac4cc6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7d06614b4db90c74e414cf23d964f3d') in 0.006119 seconds
+  Import took 0.008371 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000350 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.692 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.4 MB.
+System memory in use after: 59.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1637.
+Total: 1.553200 ms (FindLiveObjects: 0.131300 ms CreateObjectMapping: 0.035400 ms MarkObjects: 1.332400 ms  DeleteObjects: 0.052900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.755927 seconds.
+  path: Assets/Scriptable/Items/Skill Container/Container_Skill_Healer.asset
+  artifactKey: Guid(97962d0ff9dae3846b71350caeda447b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill Container/Container_Skill_Healer.asset using Guid(97962d0ff9dae3846b71350caeda447b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5b37a5004c24d27f7b91e8a08d1e5b4') in 0.063696 seconds
+  Import took 0.066130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.714167 seconds.
+  path: Assets/Scriptable/Items/Skill/Skill_Healer.asset
+  artifactKey: Guid(3b1ac859b765ca645803c8d013dc194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill/Skill_Healer.asset using Guid(3b1ac859b765ca645803c8d013dc194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b91010e63a5536ff1155da79b125f0ea') in 0.022117 seconds
+  Import took 0.024825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.179489 seconds.
+  path: Assets/Scriptable/Items/Skill/Skill_Healer 1.asset
+  artifactKey: Guid(ced27081c3025934384ff34a6056128a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill/Skill_Healer 1.asset using Guid(ced27081c3025934384ff34a6056128a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee2bb52a34c6e1cc6b8e0e03645aa9cc') in 0.029346 seconds
+  Import took 0.031506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.744563 seconds.
+  path: Assets/Scriptable/Items/Skill/Skill_Buffer.asset
+  artifactKey: Guid(ced27081c3025934384ff34a6056128a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill/Skill_Buffer.asset using Guid(ced27081c3025934384ff34a6056128a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3032439b8de1660a1531555688a34427') in 0.027480 seconds
+  Import took 0.030092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.675687 seconds.
+  path: Assets/Scriptable/Items/Skill Container/Container_Skill_Healer 1.asset
+  artifactKey: Guid(62d76befbe3b75948a9b9ccc1d894d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill Container/Container_Skill_Healer 1.asset using Guid(62d76befbe3b75948a9b9ccc1d894d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc525c6fdee424ebf11322583006a020') in 0.030083 seconds
+  Import took 0.032669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.991218 seconds.
+  path: Assets/Scriptable/Items/Skill Container/Container_Skill_Buffer.asset
+  artifactKey: Guid(62d76befbe3b75948a9b9ccc1d894d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill Container/Container_Skill_Buffer.asset using Guid(62d76befbe3b75948a9b9ccc1d894d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '197bd43350fb2470aa9b44fc46a73857') in 0.029996 seconds
+  Import took 0.032171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.974239 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19c7e0f8cbd5cce81a0b58799e9412e0') in 0.014835 seconds
+  Import took 0.017040 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000373 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.713 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.4 MB.
+System memory in use after: 59.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1640.
+Total: 1.452300 ms (FindLiveObjects: 0.114000 ms CreateObjectMapping: 0.049800 ms MarkObjects: 1.246700 ms  DeleteObjects: 0.040900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.734424 seconds.
+  path: Assets/Script/Skill/All Skill/Skill_Fire_Arrow.cs
+  artifactKey: Guid(a6eaa72c4cedcf54e9b63c36ac4cc6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Skill/All Skill/Skill_Fire_Arrow.cs using Guid(a6eaa72c4cedcf54e9b63c36ac4cc6a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4159e88e8513c7dc729bd13b51b1166f') in 0.002953 seconds
+  Import took 0.004485 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000678 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.696 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.4 MB.
+System memory in use after: 59.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1643.
+Total: 1.356300 ms (FindLiveObjects: 0.116600 ms CreateObjectMapping: 0.033800 ms MarkObjects: 1.168400 ms  DeleteObjects: 0.036800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.373956 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Fire_Arrow.prefab
+  artifactKey: Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Fire_Arrow.prefab using Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d48b2132fb868e1be22e27f9edb371') in 0.018789 seconds
+  Import took 0.020550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.074869 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Fire_Arrow.prefab
+  artifactKey: Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Fire_Arrow.prefab using Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc85846f0cbfee06dded21ba9b7ac3e8') in 0.002937 seconds
+  Import took 0.004940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.433913 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Fire_Arrow.prefab
+  artifactKey: Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Fire_Arrow.prefab using Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c15b76f270109cb549b50fc2f62600d') in 0.003344 seconds
+  Import took 0.005544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.465231 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Fire_Arrow.prefab
+  artifactKey: Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Fire_Arrow.prefab using Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46d08f8c4b1db0f8dd5a3e94e5640b64') in 0.003609 seconds
+  Import took 0.005769 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000448 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.700 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.4 MB.
+System memory in use after: 59.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1646.
+Total: 1.382200 ms (FindLiveObjects: 0.116200 ms CreateObjectMapping: 0.032800 ms MarkObjects: 1.196800 ms  DeleteObjects: 0.035800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000960 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.725 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1159 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.4 MB.
+System memory in use after: 59.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1648.
+Total: 1.876700 ms (FindLiveObjects: 0.172100 ms CreateObjectMapping: 0.046600 ms MarkObjects: 1.598200 ms  DeleteObjects: 0.058900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 210.310370 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48fda228a254a497ca39b19065e2be06') in 0.021424 seconds
+  Import took 0.023767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Healer.prefab
+  artifactKey: Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Healer.prefab using Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '154672d2b6f211540d0d27ec626fb172') in 0.006243 seconds
+  Import took 0.008045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.463990 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '604f90ac32b78ca4bd9f78a1b746f340') in 0.003443 seconds
+  Import took 0.006151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.337951 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86332f494f18114c812fb6e2f8c653a4') in 0.002748 seconds
+  Import took 0.004857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005108 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86332f494f18114c812fb6e2f8c653a4') in 0.002747 seconds
+  Import took 0.004834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.765749 seconds.
+  path: Assets/Script/Skill/All Skill Object/Fire_Arrow_Object.cs
+  artifactKey: Guid(f936bc21457eed0458f478bfce08fb2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Skill/All Skill Object/Fire_Arrow_Object.cs using Guid(f936bc21457eed0458f478bfce08fb2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b149299076886b5a13bb48f8e343072') in 0.005464 seconds
+  Import took 0.007262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.354016 seconds.
+  path: Assets/Script/Skill/All Skill Object/Healer_Object.cs
+  artifactKey: Guid(0bac2767331a3574589672db576ae51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Skill/All Skill Object/Healer_Object.cs using Guid(0bac2767331a3574589672db576ae51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3678b943c1ed6261bed11f35a0c4c65c') in 0.006799 seconds
+  Import took 0.009126 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000366 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.735 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.4 MB.
+System memory in use after: 59.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1652.
+Total: 1.497000 ms (FindLiveObjects: 0.114600 ms CreateObjectMapping: 0.032100 ms MarkObjects: 1.306800 ms  DeleteObjects: 0.042600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.157281 seconds.
+  path: Assets/Script/Skill/All Skill Object/Buffer_Object.cs
+  artifactKey: Guid(140f9ecd108054d4eb3cfeedb0f12e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Skill/All Skill Object/Buffer_Object.cs using Guid(140f9ecd108054d4eb3cfeedb0f12e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '301b2d2462bd360e5869f47f1279833d') in 0.008556 seconds
+  Import took 0.010859 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000361 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.685 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1161 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.5 MB.
+System memory in use after: 59.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1656.
+Total: 1.503400 ms (FindLiveObjects: 0.166200 ms CreateObjectMapping: 0.039400 ms MarkObjects: 1.254500 ms  DeleteObjects: 0.042400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000387 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.770 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1159 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.4 MB.
+System memory in use after: 59.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1657.
+Total: 1.584100 ms (FindLiveObjects: 0.137800 ms CreateObjectMapping: 0.040100 ms MarkObjects: 1.354400 ms  DeleteObjects: 0.050500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.605975 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67877587fad0a5b3a3e24c62fac747db') in 0.019140 seconds
+  Import took 0.021531 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.650263 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02ead619d192bd0f928f5d8155c22414') in 0.003204 seconds
+  Import took 0.005881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.363242 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a46adf9cf28b3ab5cf86e0cb9fa4ef4') in 0.003018 seconds
+  Import took 0.005101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.205264 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Healer.prefab
+  artifactKey: Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Healer.prefab using Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c574ebff74a2ee41b3cdc2cae594feb') in 0.003078 seconds
+  Import took 0.005458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.388327 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Healer.prefab
+  artifactKey: Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Healer.prefab using Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ba6cb62751343447be8ef9cc9114d75') in 0.002774 seconds
+  Import took 0.004953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.634304 seconds.
+  path: Assets/Prefab/UI/Skill UI/UI_Skill_Buffer.prefab
+  artifactKey: Guid(88d2555f8a396e143ab56104282c0ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Skill UI/UI_Skill_Buffer.prefab using Guid(88d2555f8a396e143ab56104282c0ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1225f53150bd35c6f839682f4e21e62') in 0.118987 seconds
+  Import took 0.121455 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000456 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.632 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1159 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.4 MB.
+System memory in use after: 59.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1660.
+Total: 1.430800 ms (FindLiveObjects: 0.116200 ms CreateObjectMapping: 0.032600 ms MarkObjects: 1.237700 ms  DeleteObjects: 0.043800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.489795 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Healer.prefab
+  artifactKey: Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Healer.prefab using Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c36ed445ec5c7a3bbd57a4b5e47df71') in 0.021999 seconds
+  Import took 0.023727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd6587b82065e174cfc806068fa1db13') in 0.008230 seconds
+  Import took 0.010280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.736288 seconds.
+  path: Assets/Scriptable/Items/Skill/Skill_Buffer.asset
+  artifactKey: Guid(ced27081c3025934384ff34a6056128a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill/Skill_Buffer.asset using Guid(ced27081c3025934384ff34a6056128a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acfe94ff3528f92468d2738e91a1517e') in 0.064261 seconds
+  Import took 0.066481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Scriptable/Items/Skill/Skill_Healer.asset
+  artifactKey: Guid(3b1ac859b765ca645803c8d013dc194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill/Skill_Healer.asset using Guid(3b1ac859b765ca645803c8d013dc194a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cee846b59457441a7ea49b48497851b') in 0.030729 seconds
+  Import took 0.032803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.714635 seconds.
+  path: Assets/Scriptable/Items/Skill Container/Container_Skill_Buffer.asset
+  artifactKey: Guid(62d76befbe3b75948a9b9ccc1d894d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill Container/Container_Skill_Buffer.asset using Guid(62d76befbe3b75948a9b9ccc1d894d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e276274bc3b94abb90dba57f34c4f979') in 0.032798 seconds
+  Import took 0.035084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.869755 seconds.
+  path: Assets/Scriptable/Items/Skill Container/Container_Skill_Buffer.asset
+  artifactKey: Guid(62d76befbe3b75948a9b9ccc1d894d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scriptable/Items/Skill Container/Container_Skill_Buffer.asset using Guid(62d76befbe3b75948a9b9ccc1d894d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08c8cd6c9f5861da4b4c6abe021d8677') in 0.023950 seconds
+  Import took 0.026592 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.218625 seconds.
+  path: Assets/Script/Skill/All Skill/Skill_Healer.cs
+  artifactKey: Guid(971394fca039c994db050025d42c1cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Skill/All Skill/Skill_Healer.cs using Guid(971394fca039c994db050025d42c1cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '798e70bef75c8a391dd466d14c2969fa') in 0.003408 seconds
+  Import took 0.005559 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000383 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.801 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.5 MB.
+System memory in use after: 59.5 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1664.
+Total: 5.674800 ms (FindLiveObjects: 0.670700 ms CreateObjectMapping: 0.075200 ms MarkObjects: 4.850800 ms  DeleteObjects: 0.076600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000536 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.750 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.5 MB.
+System memory in use after: 59.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1667.
+Total: 1.391100 ms (FindLiveObjects: 0.113100 ms CreateObjectMapping: 0.030300 ms MarkObjects: 1.209300 ms  DeleteObjects: 0.037700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000345 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.686 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.5 MB.
+System memory in use after: 59.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1670.
+Total: 1.398600 ms (FindLiveObjects: 0.116800 ms CreateObjectMapping: 0.041500 ms MarkObjects: 1.201500 ms  DeleteObjects: 0.038100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 133.460675 seconds.
+  path: Assets/Script/Skill/All Skill/Skill_Buffer.cs
+  artifactKey: Guid(5de1ef19a12213c4587b61201dd8637c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Skill/All Skill/Skill_Buffer.cs using Guid(5de1ef19a12213c4587b61201dd8637c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '061e943aed393aa1d02501437008cf44') in 0.003145 seconds
+  Import took 0.005018 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000687 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.698 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.5 MB.
+System memory in use after: 59.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1673.
+Total: 1.411000 ms (FindLiveObjects: 0.122400 ms CreateObjectMapping: 0.033000 ms MarkObjects: 1.214100 ms  DeleteObjects: 0.040700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 911.028123 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Fire_Arrow.prefab
+  artifactKey: Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Fire_Arrow.prefab using Guid(97d195773dc809b4391c5513b63a0ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f683a25c664f32904e82e6ae01369b8') in 0.032779 seconds
+  Import took 0.034687 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000507 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.708 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.5 MB.
+System memory in use after: 59.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1676.
+Total: 1.407000 ms (FindLiveObjects: 0.119800 ms CreateObjectMapping: 0.033600 ms MarkObjects: 1.215600 ms  DeleteObjects: 0.037400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001085 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.696 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.5 MB.
+System memory in use after: 59.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1679.
+Total: 1.468800 ms (FindLiveObjects: 0.120700 ms CreateObjectMapping: 0.032800 ms MarkObjects: 1.274100 ms  DeleteObjects: 0.040600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.919138 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Healer.prefab
+  artifactKey: Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Healer.prefab using Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5496a646b49dad2f48533123af65579c') in 0.018663 seconds
+  Import took 0.020778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba41074f1042c6a15cd7cbad70a76087') in 0.004253 seconds
+  Import took 0.006264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.690022 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Healer.prefab
+  artifactKey: Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Healer.prefab using Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c055c8a64da83d0d6ca11875a2b67318') in 0.004080 seconds
+  Import took 0.006116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006615 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Healer.prefab
+  artifactKey: Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Healer.prefab using Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c055c8a64da83d0d6ca11875a2b67318') in 0.003445 seconds
+  Import took 0.005634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.101662 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Healer.prefab
+  artifactKey: Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Healer.prefab using Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33cabcb23ae3872db524175c6aabeafb') in 0.004863 seconds
+  Import took 0.007315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008751 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Healer.prefab
+  artifactKey: Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Healer.prefab using Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33cabcb23ae3872db524175c6aabeafb') in 0.003073 seconds
+  Import took 0.005802 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000516 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.712 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.5 MB.
+System memory in use after: 59.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1682.
+Total: 1.454800 ms (FindLiveObjects: 0.118000 ms CreateObjectMapping: 0.035700 ms MarkObjects: 1.242100 ms  DeleteObjects: 0.058200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.908391 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Healer.prefab
+  artifactKey: Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Healer.prefab using Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29afec6f9b65884d19cfb80e63cbedf2') in 0.019324 seconds
+  Import took 0.021472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.271859 seconds.
+  path: Assets/Prefab/UI/Slots/Skill_Slot.prefab
+  artifactKey: Guid(175a272035ee49b45a93fac223b36c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Slots/Skill_Slot.prefab using Guid(175a272035ee49b45a93fac223b36c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d48ff0ec961a7cfeaa4de7c3b6d8f1') in 0.062412 seconds
+  Import took 0.064714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.704517 seconds.
+  path: Assets/Prefab/UI/Slots/Skill_Slot.prefab
+  artifactKey: Guid(175a272035ee49b45a93fac223b36c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Slots/Skill_Slot.prefab using Guid(175a272035ee49b45a93fac223b36c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67a652f86960149e66663d0e60a87a06') in 0.023659 seconds
+  Import took 0.026169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.689928 seconds.
+  path: Assets/Prefab/UI/Slots/KeyBar_Slot.prefab
+  artifactKey: Guid(47c7ecca4f924144e893e1d2239489c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Slots/KeyBar_Slot.prefab using Guid(47c7ecca4f924144e893e1d2239489c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69b11abf0bd54ec7704b94d9e3b50123') in 0.031973 seconds
+  Import took 0.034232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.805063 seconds.
+  path: Assets/Prefab/UI/Slots/Inventory_Slot.prefab
+  artifactKey: Guid(6c48af9051abfa9469da6c16ee63b1da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Slots/Inventory_Slot.prefab using Guid(6c48af9051abfa9469da6c16ee63b1da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907807eb56b4bba580f561820353f93b') in 0.031034 seconds
+  Import took 0.033277 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000647 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.768 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.5 MB.
+System memory in use after: 59.6 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1685.
+Total: 1.482800 ms (FindLiveObjects: 0.126700 ms CreateObjectMapping: 0.034900 ms MarkObjects: 1.276400 ms  DeleteObjects: 0.044100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 882.165425 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50119033125360ab8c412104f60c7c0c') in 0.023188 seconds
+  Import took 0.024996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.090046 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc1894ca519c72a5557963241c33e57b') in 0.004429 seconds
+  Import took 0.006563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006549 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc1894ca519c72a5557963241c33e57b') in 0.002916 seconds
+  Import took 0.006738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.613764 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ddafd22517be8e6105fe42e8c87d194') in 0.002918 seconds
+  Import took 0.005102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007463 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ddafd22517be8e6105fe42e8c87d194') in 0.003453 seconds
+  Import took 0.005723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.069149 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5c0859c646b280be3b0d4a7e700e86c') in 0.003278 seconds
+  Import took 0.006352 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000613 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.682 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1161 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.6 MB.
+System memory in use after: 59.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1689.
+Total: 1.579300 ms (FindLiveObjects: 0.145600 ms CreateObjectMapping: 0.035300 ms MarkObjects: 1.354700 ms  DeleteObjects: 0.042900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1179.546250 seconds.
+  path: Assets/Prefab/UI/Skill UI/UI_Skill_Buffer.prefab
+  artifactKey: Guid(88d2555f8a396e143ab56104282c0ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Skill UI/UI_Skill_Buffer.prefab using Guid(88d2555f8a396e143ab56104282c0ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65b2bff91f173cfa9358b4a877e13e2e') in 0.075672 seconds
+  Import took 0.077843 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Prefab/UI/Skill UI/UI_Skill_Healer.prefab
+  artifactKey: Guid(c65260c419c80c54e9ea988f51f4c3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Skill UI/UI_Skill_Healer.prefab using Guid(c65260c419c80c54e9ea988f51f4c3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b9bf4a2a9dcb490cba741070ff6b8a') in 0.031317 seconds
+  Import took 0.033758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/Prefab/UI/Skill UI/UI_Skill_FireArrow.prefab
+  artifactKey: Guid(7350f0588ea34294aab860f9951a07e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Skill UI/UI_Skill_FireArrow.prefab using Guid(7350f0588ea34294aab860f9951a07e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2057ad39107a92c75685b40406a9fa81') in 0.031050 seconds
+  Import took 0.033983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004911 seconds.
+  path: Assets/Prefab/UI/Skill UI/UI_Skill_FireArrow.prefab
+  artifactKey: Guid(7350f0588ea34294aab860f9951a07e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/UI/Skill UI/UI_Skill_FireArrow.prefab using Guid(7350f0588ea34294aab860f9951a07e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2057ad39107a92c75685b40406a9fa81') in 0.024286 seconds
+  Import took 0.026677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.549887 seconds.
+  path: Assets/Script/Skill/UI/Skill_UI_Dropdown.cs
+  artifactKey: Guid(cb3aa923f5f4f2146a787e6fad66daa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Skill/UI/Skill_UI_Dropdown.cs using Guid(cb3aa923f5f4f2146a787e6fad66daa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc8c730b5fbcd4448ed88042371115b4') in 0.006716 seconds
+  Import took 0.008620 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000370 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.774 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.6 MB.
+System memory in use after: 59.6 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1691.
+Total: 1.812700 ms (FindLiveObjects: 0.194300 ms CreateObjectMapping: 0.045600 ms MarkObjects: 1.492400 ms  DeleteObjects: 0.079500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000484 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.747 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.6 MB.
+System memory in use after: 59.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1694.
+Total: 1.543900 ms (FindLiveObjects: 0.134000 ms CreateObjectMapping: 0.034000 ms MarkObjects: 1.333100 ms  DeleteObjects: 0.042300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 721.606555 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Healer.prefab
+  artifactKey: Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Healer.prefab using Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '611c925b736e75454317f68e64b7c44f') in 0.019723 seconds
+  Import took 0.021760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cdbeb078dd86f866ca6ed7c3f43ab78') in 0.004354 seconds
+  Import took 0.006877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2912.978099 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Healer.prefab
+  artifactKey: Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Healer.prefab using Guid(7aa15c755a1f2e24289fe9444de61ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99a4f8963251aa950847831b1beaa0cc') in 0.003806 seconds
+  Import took 0.006608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.351390 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a03c66292269efa6d63c26bde62e9a09') in 0.003779 seconds
+  Import took 0.006780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009685 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a03c66292269efa6d63c26bde62e9a09') in 0.006607 seconds
+  Import took 0.009432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.995507 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b3f908cfaa8b6afb0d6e26f2cb1ab31') in 0.002710 seconds
+  Import took 0.004992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017617 seconds.
+  path: Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab
+  artifactKey: Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Skill Object/Skill_Object_Buffer.prefab using Guid(63a96049999055c4492318ceee36a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b3f908cfaa8b6afb0d6e26f2cb1ab31') in 0.003105 seconds
+  Import took 0.006372 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000743 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.963 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.6 MB.
+System memory in use after: 59.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1697.
+Total: 2.285300 ms (FindLiveObjects: 0.153400 ms CreateObjectMapping: 0.044500 ms MarkObjects: 2.033500 ms  DeleteObjects: 0.053100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000630 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.899 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.6 MB.
+System memory in use after: 59.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1700.
+Total: 1.421100 ms (FindLiveObjects: 0.118000 ms CreateObjectMapping: 0.034200 ms MarkObjects: 1.231400 ms  DeleteObjects: 0.036800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000499 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.701 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.6 MB.
+System memory in use after: 59.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1703.
+Total: 1.423300 ms (FindLiveObjects: 0.126600 ms CreateObjectMapping: 0.032600 ms MarkObjects: 1.224500 ms  DeleteObjects: 0.038900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000578 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.745 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.6 MB.
+System memory in use after: 59.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1706.
+Total: 2.064300 ms (FindLiveObjects: 0.148400 ms CreateObjectMapping: 0.050300 ms MarkObjects: 1.795400 ms  DeleteObjects: 0.069200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000439 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.737 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.6 MB.
+System memory in use after: 59.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1709.
+Total: 1.897800 ms (FindLiveObjects: 0.180400 ms CreateObjectMapping: 0.042000 ms MarkObjects: 1.615000 ms  DeleteObjects: 0.059300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000654 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.913 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.6 MB.
+System memory in use after: 59.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1712.
+Total: 1.833900 ms (FindLiveObjects: 0.189300 ms CreateObjectMapping: 0.051500 ms MarkObjects: 1.483600 ms  DeleteObjects: 0.108000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000612 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.774 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.6 MB.
+System memory in use after: 59.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1715.
+Total: 1.540500 ms (FindLiveObjects: 0.134000 ms CreateObjectMapping: 0.036300 ms MarkObjects: 1.327400 ms  DeleteObjects: 0.042100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000641 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.741 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1160 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.6 MB.
+System memory in use after: 59.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1718.
+Total: 1.478800 ms (FindLiveObjects: 0.132900 ms CreateObjectMapping: 0.036900 ms MarkObjects: 1.247000 ms  DeleteObjects: 0.061300 ms)
+

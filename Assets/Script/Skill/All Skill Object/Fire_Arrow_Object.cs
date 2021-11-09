@@ -6,25 +6,25 @@ using System.Collections.Generic;
 public class Fire_Arrow_Object : Skill_Object
 {
     [Header("Fire Arrow Skill")]
-    public Fire_Arrow_Skill fire_Arrow_Skill;
+    public Skill_Fire_Arrow skill_Fire_Arrow;
     public override void StartSkill(Vector3 direction)
     {
-        if (myOwner.manaStat.StatValue >= fire_Arrow_Skill.mana)
+        if (myOwner.manaStat.StatValue >= skill_Fire_Arrow.mana)
         {
-            myOwner.manaStat.RemoveStatCore(fire_Arrow_Skill.mana);
-            for (int e = fire_Arrow_Skill.mySlots.Count - 1; e >= 0; e--)
+            myOwner.manaStat.RemoveStatCore(skill_Fire_Arrow.mana);
+            for (int e = skill_Fire_Arrow.mySlots.Count - 1; e >= 0; e--)
             {
-                if (fire_Arrow_Skill.mySlots[e] == null)
+                if (skill_Fire_Arrow.mySlots[e] == null)
                 {
-                    fire_Arrow_Skill.mySlots.RemoveAt(e);
+                    skill_Fire_Arrow.mySlots.RemoveAt(e);
                 }
             }
-            for (int e = 0; e < fire_Arrow_Skill.mySlots.Count; e++)
+            for (int e = 0; e < skill_Fire_Arrow.mySlots.Count; e++)
             {
-                fire_Arrow_Skill.mySlots[e].UseCooldDownImage(1);
-                fire_Arrow_Skill.mySlots[e].SlotButtonInterac(false);
+                skill_Fire_Arrow.mySlots[e].UseCooldDownImage(1);
+                skill_Fire_Arrow.mySlots[e].SlotButtonInterac(false);
             }
-            Instantiate(fire_Arrow_Skill.fireArrowPrefab, exitPos, Quaternion.identity).SetBullet(direction);
+            Instantiate(skill_Fire_Arrow.fireArrowPrefab, exitPos, Quaternion.identity).SetBullet(direction);
         }
         else
         {
@@ -32,36 +32,42 @@ public class Fire_Arrow_Object : Skill_Object
             Destroy(gameObject);
         }
     }
-    public override void AddSkillSlot(Slot slot)
-    {
-        if (!fire_Arrow_Skill.mySlots.Contains(slot))
-        {
-            fire_Arrow_Skill.mySlots.Add(slot);
-        }
-    }
-    public override void RemoveSkillSlot(Slot slot)
-    {
-        fire_Arrow_Skill.mySlots.Remove(slot);
-    }
     private void Update()
     {
-        fire_Arrow_Skill.coolDownNext += Time.deltaTime;
-        for (int e = 0; e < fire_Arrow_Skill.mySlots.Count; e++)
+        skill_Fire_Arrow.coolDownNext += Time.deltaTime;
+        for (int e = 0; e < skill_Fire_Arrow.mySlots.Count; e++)
         {
-            fire_Arrow_Skill.mySlots[e].UseCooldDownImage(1 - (fire_Arrow_Skill.coolDownNext / fire_Arrow_Skill.coolDown));
+            skill_Fire_Arrow.mySlots[e].UseCooldDownImage(1 - (skill_Fire_Arrow.coolDownNext / skill_Fire_Arrow.coolDown));
         }
-        if (fire_Arrow_Skill.coolDownNext >= fire_Arrow_Skill.coolDown)
+        if (skill_Fire_Arrow.coolDownNext >= skill_Fire_Arrow.coolDown)
         {
-            fire_Arrow_Skill.coolDownNext = 0;
-            for (int e = 0; e < fire_Arrow_Skill.mySlots.Count; e++)
+            skill_Fire_Arrow.coolDownNext = 0;
+            for (int e = 0; e < skill_Fire_Arrow.mySlots.Count; e++)
             {
-                fire_Arrow_Skill.mySlots[e].SlotButtonInterac(true);
+                skill_Fire_Arrow.mySlots[e].SlotButtonInterac(true);
             }
             DestroySkill();
         }
     }
+    #region Slot - Pasif
+    public override void AddSkillSlot(Slot slot)
+    {
+        if (!skill_Fire_Arrow.mySlots.Contains(slot))
+        {
+            skill_Fire_Arrow.mySlots.Add(slot);
+        }
+    }
+    public override void RemoveSkillSlot(Slot slot)
+    {
+        skill_Fire_Arrow.mySlots.Remove(slot);
+    }
     public override void ClearSlots()
     {
-        fire_Arrow_Skill.mySlots.Clear();
+        skill_Fire_Arrow.mySlots.Clear();
     }
+    public override bool IsPasif()
+    {
+        return skill_Fire_Arrow.isPasif;
+    } 
+    #endregion
 }
