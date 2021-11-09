@@ -38,8 +38,7 @@ public class Npc : MonoBehaviour
     {
         if (Input.GetKeyDown(keyCode) && insidePlayer)
         {
-            Canvas_Manager.Instance.OpenNpcPanel(npcInventoryItems, npcName);
-            Canvas_Manager.Instance.OpenOtherEquipPanel(equip_Items, npcName);
+            Canvas_Manager.Instance.OpenNpcPanel(npcInventoryItems, equip_Items, npcName);
         }
     }
 }

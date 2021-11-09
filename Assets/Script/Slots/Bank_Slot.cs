@@ -54,6 +54,7 @@ public class Bank_Slot : Slot
                 }
             }
         }
+        Tool_Manager.Instance.CloseTool();
     }
     public override void MiddleClick()
     {

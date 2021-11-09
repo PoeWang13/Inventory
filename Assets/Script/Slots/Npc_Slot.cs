@@ -37,6 +37,7 @@ public class Npc_Slot : Slot
                 Canvas_Manager.Instance.UyariYap("You don't have Money.");
             }
         }
+        Tool_Manager.Instance.CloseTool();
     }
     public override void MiddleClick()
     {

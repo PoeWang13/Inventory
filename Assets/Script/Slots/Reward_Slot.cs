@@ -10,5 +10,6 @@ public class Reward_Slot : Slot
             Canvas_Manager.Instance.UyariYap("You don't take all REWARD.");
         }
         SlotButtonInterac(false);
+        Tool_Manager.Instance.CloseTool();
     }
 }

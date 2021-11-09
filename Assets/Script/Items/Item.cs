@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public enum ItemType { Genel, Potion, Equip, Skill, Craft }
+public enum ItemType { Genel, Potion, Equip, Skill, Craft, Silah }
 public class Item : ScriptableObject
 {
     public string myName;

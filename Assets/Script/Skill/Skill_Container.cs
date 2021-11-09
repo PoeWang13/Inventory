@@ -7,6 +7,6 @@ public class Skill_Container : Item
     public Skill_Item skill_Item;
     public override void UseItem(Slot mySlot, Inventory myInventory)
     {
-        myInventory.player.AddSkill(skill_Item, 0);
+        myInventory.player.AddSkill(skill_Item);
     }
 }

@@ -16,7 +16,6 @@ public class Canvas_Manager : MonoBehaviour
             instance = this;
         }
     }
-    [Header("Script Atamaları")]
 
     #region Panel
     public List<GameObject> ortakPaneller = new List<GameObject>();
@@ -35,16 +34,17 @@ public class Canvas_Manager : MonoBehaviour
     public List<Slot> npcSlots = new List<Slot>();
     public List<Bank_Slot> bankSlots = new List<Bank_Slot>();
     public List<Equip_Slot> playerEquipSlot = new List<Equip_Slot>();
-    public List<Equip_Slot> otherEquip_Slots = new List<Equip_Slot>();
+    public List<Slot> otherEquip_Slots = new List<Slot>();
     public Player player;
     public Sprite emptySlotSprite;
     public void OpenDurumPanel()
     {
-        durumPanel.SetActive(!durumPanel.activeSelf);
         OrtakPanelClose();
+        durumPanel.SetActive(!durumPanel.activeSelf);
     }
     private void OrtakPanelClose()
     {
+        inventoryPanel.SetActive(false);
         for (int e = 0; e < ortakPaneller.Count; e++)
         {
             ortakPaneller[e].SetActive(false);
@@ -53,46 +53,36 @@ public class Canvas_Manager : MonoBehaviour
     public void CloseOpensPanels()
     {
         OrtakPanelClose();
+        durumPanel.SetActive(false);
         inventoryPanel.SetActive(false);
     }
     public void OpenInventoryPanel()
     {
+        OrtakPanelClose();
+        durumPanel.SetActive(false);
         inventoryPanel.SetActive(true);
     }
     public void OpenEquipPlayerPanel()
     {
-        OrtakPanelClose();
-        durumPanel.SetActive(false);
-        inventoryPanel.SetActive(true);
+        OpenInventoryPanel();
         playerEquipPanel.SetActive(true);
-    }
-    public void OpenCraftPanel()
-    {
-        OrtakPanelClose();
-        durumPanel.SetActive(false);
-        inventoryPanel.SetActive(true);
-        craftPanel.SetActive(true);
     }
     public void OpenSkillPanel()
     {
-        OrtakPanelClose();
-        durumPanel.SetActive(false);
-        inventoryPanel.SetActive(true);
+        OpenInventoryPanel();
         skillPanel.SetActive(true);
     }
     public void OpenBankPanel()
     {
-        OrtakPanelClose();
-        inventoryPanel.SetActive(true);
+        OpenInventoryPanel();
         bankPanel.SetActive(true);
     }
     public void OpenOtherEquipPanel(List<EquipDurum> equipItems, string npcName)
     {
-        OrtakPanelClose();
-        durumPanel.SetActive(false);
-        inventoryPanel.SetActive(false);
+        OpenInventoryPanel();
         otherEquipPanel.SetActive(true);
         npcTableName.text = npcName;
+
         for (int e = 0; e < otherEquip_Slots.Count; e++)
         {
             otherEquip_Slots[e].SlotBosalt();
@@ -105,11 +95,12 @@ public class Canvas_Manager : MonoBehaviour
             }
         }
     }
-    public void OpenNpcPanel(List<Item> npcItems, string npcName)
+    public void OpenNpcPanel(List<Item> npcItems, List<EquipDurum> equipItems, string npcName)
     {
         npcTableName.text = npcName;
-        OrtakPanelClose();
-        inventoryPanel.SetActive(true);
+        OpenInventoryPanel();
+        npcPanel.SetActive(true);
+        otherEquipPanel.SetActive(true);
         for (int e = 0; e < npcSlots.Count; e++)
         {
             npcSlots[e].SlotBosalt();
@@ -118,7 +109,17 @@ public class Canvas_Manager : MonoBehaviour
         {
             npcSlots[e].SlotDoldur(npcItems[e], 1);
         }
-        npcPanel.SetActive(true);
+        for (int e = 0; e < otherEquip_Slots.Count; e++)
+        {
+            otherEquip_Slots[e].SlotBosalt();
+        }
+        for (int e = 0; e < otherEquip_Slots.Count; e++)
+        {
+            if (equipItems[e].equip_Item != null)
+            {
+                otherEquip_Slots[e].SlotDoldur(equipItems[e].equip_Item, 1);
+            }
+        }
     }
     #endregion
 
@@ -130,6 +131,7 @@ public class Canvas_Manager : MonoBehaviour
     }
     public void OpenCarrierSlot(Slot slot)
     {
+        carrier_Slot.transform.position = Input.mousePosition;
         carrier_Slot.gameObject.SetActive(true);
         carrier_Slot.TasinanSlot(slot);
     }
@@ -161,8 +163,7 @@ public class Canvas_Manager : MonoBehaviour
     public void OpenCraftList(Craft_List_Conteiner craft_List_Conteiner, string craftListName)
     {
         craftTableName.text = craftListName;
-        OrtakPanelClose();
-        inventoryPanel.SetActive(true);
+        OpenInventoryPanel();
         craftPanel.SetActive(true);
         for (int e = 0; e < craftSlotParent.childCount; e++)
         {
@@ -195,9 +196,55 @@ public class Canvas_Manager : MonoBehaviour
 
     #region Skill
     public Transform skillParent;
-    public void AddSkill(Skill_Item skill_Item, int skillLevel)
+    public void AddSkill(Skill_Item skill_Item)
     {
-        Instantiate(skill_Item.skillUI, skillParent).SetSkillUI(skill_Item);
+        Instantiate(skill_Item.skillUI, skillParent).SetSkillUI();
+    }
+    #endregion
+
+    #region Stat
+    public StatUI statPrefab;
+    public Transform statParent;
+    public Image lifeImage;
+    public Image manaImage;
+    public void AddStat(Stat stat)
+    {
+        Instantiate(statPrefab, statParent).SetStatUI(stat, player);
+    }
+    public void LifeStatChanced()
+    {
+        lifeImage.fillAmount = player.MyLifePercent();
+    }
+    private void Player_OnLifeStatChanced(object sender, System.EventArgs e)
+    {
+        LifeStatChanced();
+    }
+    public void ManaStatChanced()
+    {
+        manaImage.fillAmount = player.MyManaPercent();
+    }
+    private void Player_OnManaStatChanced(object sender, System.EventArgs e)
+    {
+        ManaStatChanced();
+    }
+    #endregion
+
+    #region Exp
+    public TextMeshProUGUI levelExp;
+    public TextMeshProUGUI levelPercent;
+    public Image levelImage;
+    private void Player_OnExpChanced(object sender, MyExp myExp)
+    {
+        levelExp.text = "My Exp : " + myExp.myLevelExp.ToString();
+        float lvlPercent = player.MyLevelPercent();
+        levelPercent.text = "My Level : " + myExp.myLevel + " - " + " % " + (lvlPercent * 100).ToString("F");
+        levelImage.fillAmount = lvlPercent;
+    }
+    private void Start()
+    {
+        player.OnExpChanced += Player_OnExpChanced;
+        player.lifeStat.OnStatChanced += Player_OnLifeStatChanced;
+        player.manaStat.OnStatChanced += Player_OnManaStatChanced;
     }
     #endregion
 }

@@ -46,7 +46,9 @@ MonoBehaviour:
   exitPos: {x: 0, y: 0, z: 0}
   myOwner: {fileID: 0}
   fire_Arrow_Skill:
+    mana: 5
     coolDown: 3
     coolDownNext: 0
-    mySlots: []
+    mySlots:
+    - {fileID: 0}
     fireArrowPrefab: {fileID: -8311035146950524799, guid: eb5fc72db8379a24c8c7e4e70f9c4794, type: 3}

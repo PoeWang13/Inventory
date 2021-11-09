@@ -29,6 +29,7 @@ public class KeyBar_Slot : Slot
                 Canvas_Manager.Instance.UsedCarrierSlot(this);
             }
         }
+        Tool_Manager.Instance.CloseTool();
     }
     /// yere at
     public override void MiddleClick()

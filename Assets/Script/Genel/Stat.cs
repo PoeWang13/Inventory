@@ -3,6 +3,7 @@
 [System.Serializable]
 public class Stat
 {
+    public event System.EventHandler OnStatChanced;
     public Stat(string statName, int myStatCore)
     {
         this.statName = statName;
@@ -11,42 +12,51 @@ public class Stat
     public string statName;
     public int myStatCore;
     private int statCore;
-    public int StatValue { 
-        get {
-            if (isDirty)
-            {
-                isDirty = false;
-                CalculateStatValue();
-            }
-            return statCore; } }
-    private bool isDirty = true;
+    public int StatValue { get { return statCore; } }
     private int statAdd;
     private int statAddYuzde;
+    public void AddStatCore(int add)
+    {
+        myStatCore += add;
+        CalculateStatValue();
+        OnStatChanced?.Invoke(this, System.EventArgs.Empty);
+    }
+    public void RemoveStatCore(int remove)
+    {
+        myStatCore -= remove;
+        CalculateStatValue();
+        OnStatChanced?.Invoke(this, System.EventArgs.Empty);
+    }
     public void AddStat(int add)
     {
         statAdd += add;
-        isDirty = true;
+        CalculateStatValue();
+        OnStatChanced?.Invoke(this, System.EventArgs.Empty);
     }
     public void AddYuzdeStat(int addYuzde)
     {
         statAddYuzde += addYuzde;
-        isDirty = true;
+        CalculateStatValue();
+        OnStatChanced?.Invoke(this, System.EventArgs.Empty);
     }
-    public void RemoveStat(int add)
+    public void RemoveStat(int remove)
     {
-        statAdd -= add;
-        isDirty = true;
+        statAdd -= remove;
+        CalculateStatValue();
+        OnStatChanced?.Invoke(this, System.EventArgs.Empty);
     }
-    public void RemoveYuzdeStat(int addYuzde)
+    public void RemoveYuzdeStat(int removeYuzde)
     {
-        statAddYuzde -= addYuzde;
-        isDirty = true;
+        statAddYuzde -= removeYuzde;
+        CalculateStatValue();
+        OnStatChanced?.Invoke(this, System.EventArgs.Empty);
     }
     public void ClearStat()
     {
         statAdd = 0;
         statAddYuzde = 0;
-        isDirty = true;
+        CalculateStatValue();
+        OnStatChanced?.Invoke(this, System.EventArgs.Empty);
     }
     public void CalculateStatValue()
     {

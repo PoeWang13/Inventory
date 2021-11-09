@@ -7,6 +7,7 @@ using System.Collections.Generic;
 public class Skill
 {
     [Header("Script Atamaları")]
+    public int mana;
     public int coolDown;
     public float coolDownNext;
     public List<Slot> mySlots = new List<Slot>();

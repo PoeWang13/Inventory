@@ -9,19 +9,28 @@ public class Fire_Arrow_Object : Skill_Object
     public Fire_Arrow_Skill fire_Arrow_Skill;
     public override void StartSkill(Vector3 direction)
     {
-        for (int e = fire_Arrow_Skill.mySlots.Count - 1; e >= 0 ; e--)
+        if (myOwner.manaStat.StatValue >= fire_Arrow_Skill.mana)
         {
-            if (fire_Arrow_Skill.mySlots[e] == null)
+            myOwner.manaStat.RemoveStatCore(fire_Arrow_Skill.mana);
+            for (int e = fire_Arrow_Skill.mySlots.Count - 1; e >= 0; e--)
             {
-                fire_Arrow_Skill.mySlots.RemoveAt(e);
+                if (fire_Arrow_Skill.mySlots[e] == null)
+                {
+                    fire_Arrow_Skill.mySlots.RemoveAt(e);
+                }
             }
+            for (int e = 0; e < fire_Arrow_Skill.mySlots.Count; e++)
+            {
+                fire_Arrow_Skill.mySlots[e].UseCooldDownImage(1);
+                fire_Arrow_Skill.mySlots[e].SlotButtonInterac(false);
+            }
+            Instantiate(fire_Arrow_Skill.fireArrowPrefab, exitPos, Quaternion.identity).SetBullet(direction);
         }
-        for (int e = 0; e < fire_Arrow_Skill.mySlots.Count; e++)
+        else
         {
-            fire_Arrow_Skill.mySlots[e].UseCooldDownImage(1);
-            fire_Arrow_Skill.mySlots[e].SlotButtonInterac(false);
+            Canvas_Manager.Instance.UyariYap("Yeteri kadar manan yok.");
+            Destroy(gameObject);
         }
-        Instantiate(fire_Arrow_Skill.fireArrowPrefab, exitPos, Quaternion.identity).SetBullet(direction);
     }
     public override void AddSkillSlot(Slot slot)
     {

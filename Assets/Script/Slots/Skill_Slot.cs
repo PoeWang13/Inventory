@@ -21,6 +21,7 @@ public class Skill_Slot : Slot
         {
             Canvas_Manager.Instance.OpenCarrierSlot(this);
         }
+        Tool_Manager.Instance.CloseTool();
     }
     public override void MiddleClick()
     {

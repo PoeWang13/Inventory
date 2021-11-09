@@ -22,7 +22,10 @@ public class Equip_Manager_Npc : Equip_Manager
     {
         for (int e = 0; e < npc.equip_Items.Count; e++)
         {
-            ItemEquipNpc(npc.equip_Items[e].equip_Item);
+            if (npc.equip_Items[e].equip_Item != null)
+            {
+                ItemEquipNpc(npc.equip_Items[e].equip_Item);
+            }
         }
     }
     public void UnEquipAllItems(int itemNo)

@@ -26,5 +26,6 @@ public class Craft_Slot : Slot
             }
             myInventory.ItemEkle(craft_Item.myObject, craft_Item.yapimAdet);
         }
+        Tool_Manager.Instance.CloseTool();
     }
 }

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5eba6e69504d941b449c27ac256a48, type: 3}
+  m_Name: Kafalik
+  m_EditorClassIdentifier: 
+  myName: Kafalik
+  myDesc: KafalikKafalik
+  myIcon: {fileID: 21300000, guid: 9a2fa8f52078cb7449b93a3dfdf1dcff, type: 3}
+  itemType: 5
+  itemPrice: 1
+  maxAmount: 1
+  isPriceTl: 0
+  bodyPart: {fileID: 11400000, guid: b6a411d63fa36ce47b636f45c8de39f5, type: 2}
+  skill_Item: {fileID: 0}
+  ciftKol: 0
+  myStats:
+  - stat:
+      statName: Speed
+      myStatCore: 10
+    isPercent: 1
