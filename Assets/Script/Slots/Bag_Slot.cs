@@ -40,6 +40,10 @@ public class Bag_Slot : Slot
     {
         if (item != null)
         {
+            if (Canvas_Manager.Instance.IsOpenCarrierSlot())
+            {
+                Canvas_Manager.Instance.CloseCarrierSlot();
+            }
             if (item is Skill_Item)
             {
                 (item as Skill_Item).skill_Object.GetComponent<Skill_Object>().RemoveSkillSlot(this);
@@ -57,8 +61,15 @@ public class Bag_Slot : Slot
     {
         if (item != null)
         {
+            if (Canvas_Manager.Instance.IsOpenCarrierSlot())
+            {
+                Canvas_Manager.Instance.CloseCarrierSlot();
+            }
             item.UseItem(this, Canvas_Manager.Instance.player.myInventory);
-            SlotItemKullan();
+            if (!(item is Skill_Item))
+            {
+                SlotItemKullan();
+            }
         }
     }
 }

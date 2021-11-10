@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 
 public enum ItemType { Genel, Potion, Equip, Skill, Craft, Silah }
+[CreateAssetMenu(menuName = "Item/Genel")]
 public class Item : ScriptableObject
 {
     public string myName;

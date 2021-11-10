@@ -53,12 +53,18 @@ public class KeyBar_Slot : Slot
     {
         if (item != null)
         {
+            if (Canvas_Manager.Instance.IsOpenCarrierSlot())
+            {
+                Canvas_Manager.Instance.CloseCarrierSlot();
+            }
             item.UseItem(this, Canvas_Manager.Instance.player.myInventory);
-            SlotItemKullan();
+            if (!(item is Skill_Item))
+            {
+                SlotItemKullan();
+            }
         }
     }
     [Header("Key Bar Part")]
-    public TextMeshProUGUI keyCodeText;
     public KeyCode keyCode;
 
     // Update
@@ -69,7 +75,10 @@ public class KeyBar_Slot : Slot
             if (item != null)
             {
                 item.UseItem(this, Canvas_Manager.Instance.player.myInventory);
-                SlotItemKullan();
+                if (!(item is Skill_Item))
+                {
+                    SlotItemKullan();
+                }
             }
         }
     }

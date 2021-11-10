@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myName: Container_Skill_Healer
   myDesc: Learn Skill Healer
-  myIcon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  myIcon: {fileID: 21300000, guid: 8b173618105fcc1469f8b91a9975b87a, type: 3}
   itemType: 0
   itemPrice: 1
   maxAmount: 1

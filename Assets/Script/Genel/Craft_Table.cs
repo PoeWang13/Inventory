@@ -7,26 +7,31 @@ public class Craft_Table : MonoBehaviour
 {
     [Header("Script Atamaları")]
     public string craftListName;
-    public Player player;
-    public bool insidePlayer;
+    private bool insidePlayer;
     public KeyCode keyCode = KeyCode.C;
+    private GameObject uyari;
+    private TextMeshProUGUI openingText;
     public Craft_List_Conteiner craft_List_Conteiner;
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        uyari = transform.GetChild(0).gameObject;
+        openingText = uyari.GetComponentInChildren<TextMeshProUGUI>();
+        openingText.text = "Open Craft List - <color=blue>" + keyCode.ToString() + "</color> -";
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             insidePlayer = true;
+            uyari.SetActive(true);
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            uyari.SetActive(false);
             insidePlayer = false;
             Canvas_Manager.Instance.CloseOpensPanels();
         }

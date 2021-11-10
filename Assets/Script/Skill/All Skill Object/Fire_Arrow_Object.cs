@@ -68,6 +68,10 @@ public class Fire_Arrow_Object : Skill_Object
     public override bool IsPasif()
     {
         return skill_Fire_Arrow.isPasif;
-    } 
+    }
+    public override (int, int) Mana_Cooldown()
+    {
+        return (skill_Fire_Arrow.mana, skill_Fire_Arrow.coolDown);
+    }
     #endregion
 }

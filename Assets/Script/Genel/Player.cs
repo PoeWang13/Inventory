@@ -30,6 +30,8 @@ public class Player : Owner
     public int myLevel;
     public int myLevelExp;
     public int myLevelExpMax = 10;
+    public int levelIncreaceAmount = 5;
+    public int freeStatIncreaceAmount = 5;
     public Inventory myInventory;
     public Equip_Manager_Player equip_Manager_Player;
     public int speedMove;
@@ -47,12 +49,17 @@ public class Player : Owner
         }
         lifeStat.AddStatCore(myStats[0].StatValue);
         manaStat.AddStatCore(myStats[1].StatValue);
-        AddLevelExp();
+        AddLevelExp(0);
         MyStat("Str").OnStatChanced += Player_OnLifeStatChanced;
         MyStat("Int").OnStatChanced += Player_OnManaStatChanced;
         MyStat("Power").OnStatChanced += Player_OnPowerStatChanced;
         MyStat("Armor").OnStatChanced += Player_OnArmorStatChanced;
         MyStat("Speed").OnStatChanced += Player_OnSpeedStatChanced;
+    }
+    public void AddNewStat(string statName, int statCore)
+    {
+        Stat newStat = new Stat(statName, statCore);
+        Canvas_Manager.Instance.AddStat(newStat);
     }
     private void Player_OnLifeStatChanced(object sender, System.EventArgs e)
     {
@@ -82,22 +89,22 @@ public class Player : Owner
     }
     public void FreeStatAdd()
     {
-        myFreeStat += 5;
+        myFreeStat += freeStatIncreaceAmount;
         OnFreeStatAdd?.Invoke(this, System.EventArgs.Empty);
     }
     public float MyLevelPercent()
     {
         return myLevelExp * 1.0f / myLevelExpMax;
     }
-    public void AddLevelExp()
+    public void AddLevelExp(int exp)
     {
-        myLevelExp += 5;
+        myLevelExp += exp;
         if (myLevelExp >= myLevelExpMax)
         {
             FreeStatAdd();
             myLevel++;
             myLevelExp -= myLevelExpMax;
-            myLevelExpMax += 5;
+            myLevelExpMax += levelIncreaceAmount;
         }
         OnExpChanced?.Invoke(this, new MyExp { myLevelExp = myLevelExp, myLevel = myLevel }) ;
     }
@@ -127,7 +134,7 @@ public class Player : Owner
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
-            AddLevelExp();
+            AddLevelExp(5);
         }
         direction = transform.forward;
         // Git İleri-Geri

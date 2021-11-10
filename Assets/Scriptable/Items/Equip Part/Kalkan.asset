@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myName: Kalkan
   myDesc: KalkanKalkan
-  myIcon: {fileID: 21300000, guid: 9a2fa8f52078cb7449b93a3dfdf1dcff, type: 3}
+  myIcon: {fileID: 21300000, guid: 6e9542435f90499408775120ea730c5b, type: 3}
   itemType: 5
   itemPrice: 1
   maxAmount: 1

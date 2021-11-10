@@ -36,4 +36,8 @@ public class Skill_Object : MonoBehaviour
     {
         return false;
     }
+    public virtual (int, int) Mana_Cooldown()
+    {
+        return (0, 0);
+    }
 }

@@ -67,7 +67,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Mana : 5
 
-    CoolDown : 3'
+    CoolDown : 5'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 8270893881814204038}
   - component: {fileID: 4351905557009563840}
   m_Layer: 5
-  m_Name: UI_Skill_FireArrow
+  m_Name: UI_Skill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -195,8 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f23e38609aba2d84da59db6e6951f6b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skill_Item: {fileID: 11400000, guid: 02eec0c3bef238f469fc6ba9f6903b22, type: 2}
-  skill_Slot: {fileID: 4934851066976375339}
+  skillText: {fileID: 4531598460765083731}
 --- !u!1001 &8270893883210484687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -299,14 +298,3 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4355627330388761196, guid: 175a272035ee49b45a93fac223b36c54, type: 3}
   m_PrefabInstance: {fileID: 8270893883210484687}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4934851066976375339 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3941778649742825956, guid: 175a272035ee49b45a93fac223b36c54, type: 3}
-  m_PrefabInstance: {fileID: 8270893883210484687}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e6a433b39fbb0a408994ce86e47d441, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

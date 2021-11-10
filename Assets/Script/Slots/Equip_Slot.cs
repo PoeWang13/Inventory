@@ -154,6 +154,10 @@ public class Equip_Slot : Slot
     {
         if (item != null)
         {
+            if (Canvas_Manager.Instance.IsOpenCarrierSlot())
+            {
+                Canvas_Manager.Instance.CloseCarrierSlot();
+            }
             equip_Manager_Player.UnEquip(item as Equip_Item);
             Game_Manager.Instance.CreateItemBox(item, itemAmount);
             SlotBosalt();
@@ -161,6 +165,10 @@ public class Equip_Slot : Slot
     }
     public override void RightClick()
     {
+        if (Canvas_Manager.Instance.IsOpenCarrierSlot())
+        {
+            Canvas_Manager.Instance.CloseCarrierSlot();
+        }
         // if Equip has a skill
         (item as Equip_Item).UseSkill();
     }

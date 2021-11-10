@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myName: Bottle
   myDesc: 1 Bottle
-  myIcon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  myIcon: {fileID: 21300000, guid: 6f4b54539effb4e4587579b8701e30a2, type: 3}
   itemType: 0
   itemPrice: 1
   maxAmount: 3

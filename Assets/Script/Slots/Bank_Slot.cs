@@ -60,6 +60,10 @@ public class Bank_Slot : Slot
     {
         if (item != null)
         {
+            if (Canvas_Manager.Instance.IsOpenCarrierSlot())
+            {
+                Canvas_Manager.Instance.CloseCarrierSlot();
+            }
             Game_Manager.Instance.CreateItemBox(item, itemAmount);
             SlotBosalt();
         }
@@ -67,6 +71,10 @@ public class Bank_Slot : Slot
     /// inventory gonder
     public override void RightClick()
     {
+        if (Canvas_Manager.Instance.IsOpenCarrierSlot())
+        {
+            Canvas_Manager.Instance.CloseCarrierSlot();
+        }
         itemAmount = Canvas_Manager.Instance.player.myInventory.ItemEkle(item, itemAmount).Item2;
         if (itemAmount == 0)
         {

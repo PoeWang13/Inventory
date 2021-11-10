@@ -29,12 +29,20 @@ public class Skill_Slot : Slot
     }
     public override void MiddleClick()
     {
+        if (Canvas_Manager.Instance.IsOpenCarrierSlot())
+        {
+            Canvas_Manager.Instance.CloseCarrierSlot();
+        }
         Canvas_Manager.Instance.player.RemoveSkill(item as Skill_Item);
     }
     public override void RightClick()
     {
         if (coolDownImage.fillAmount == 0)
         {
+            if (Canvas_Manager.Instance.IsOpenCarrierSlot())
+            {
+                Canvas_Manager.Instance.CloseCarrierSlot();
+            }
             Canvas_Manager.Instance.player.CreateSkillObject(item as Skill_Item);
         }
     }

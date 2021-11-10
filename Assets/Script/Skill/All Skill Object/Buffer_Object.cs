@@ -50,5 +50,9 @@ public class Buffer_Object : Skill_Object
     {
         return skill_Buffer.isPasif;
     }
+    public override (int, int) Mana_Cooldown()
+    {
+        return (skill_Buffer.mana, skill_Buffer.coolDown);
+    }
     #endregion
 }

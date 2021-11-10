@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 750543d97de1b7b4f8f943e455f6ec04, type: 3}
   m_Name: Craft_List_Potion
   m_EditorClassIdentifier: 
-  craftLists:
-  - {fileID: 11400000, guid: 1dbe5235dcacd3b4698a68ea78ddaab7, type: 2}
+  craftLists: []

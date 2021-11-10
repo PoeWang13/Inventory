@@ -76,5 +76,9 @@ public class Healer_Object : Skill_Object
     {
         return skill_Healer.isPasif;
     }
+    public override (int, int) Mana_Cooldown()
+    {
+        return (skill_Healer.mana, skill_Healer.coolDown);
+    }
     #endregion
 }

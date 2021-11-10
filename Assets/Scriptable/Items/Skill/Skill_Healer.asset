@@ -14,12 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myName: Skill_Healer
   myDesc: Skill Healer
-  myIcon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  myIcon: {fileID: 21300000, guid: 8b173618105fcc1469f8b91a9975b87a, type: 3}
   itemType: 3
   itemPrice: 1
   maxAmount: 1
   isPriceTl: 0
-  isPasif: 0
   skill_Object: {fileID: 6442121168110384185, guid: 7aa15c755a1f2e24289fe9444de61ff8, type: 3}
   slotEffect: {fileID: 0}
   skillUI: {fileID: 4351905557009563840, guid: c65260c419c80c54e9ea988f51f4c3bc, type: 3}

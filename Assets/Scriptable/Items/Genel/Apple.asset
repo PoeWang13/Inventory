@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myName: Apple
   myDesc: 1 Apple
-  myIcon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  myIcon: {fileID: 21300000, guid: ba1ce15573c0966439168613965ac29e, type: 3}
   itemType: 0
   itemPrice: 1
   maxAmount: 3

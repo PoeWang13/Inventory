@@ -28,4 +28,8 @@ public class Craft_Item : Item
             Canvas_Manager.Instance.UyariYap("You have this Craft Method.");
         }
     }
+    public override string ItemSpecial()
+    {
+        return "Crafting Amount : " + yapimAdet;
+    }
 }

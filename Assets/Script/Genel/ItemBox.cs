@@ -1,12 +1,14 @@
 using UnityEngine;
-
+using TMPro;
 public class ItemBox : MonoBehaviour
 {
-    public Player player;
+    private Inventory playerInventory;
     public Item item;
     public int itemAmount;
-    public bool insidePlayer;
+    private bool insidePlayer;
     public KeyCode keyCode = KeyCode.B;
+    private GameObject uyari;
+    private TextMeshProUGUI openingText;
 
     public void ItemBoxDoldur(Item item, int itemAmount)
     {
@@ -15,12 +17,16 @@ public class ItemBox : MonoBehaviour
     }
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        uyari = transform.GetChild(0).gameObject;
+        openingText = uyari.GetComponentInChildren<TextMeshProUGUI>();
+        playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().GetComponent<Inventory>();
+        openingText.text = "Collect - <color=blue>" + keyCode.ToString() + "</color> -";
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            uyari.SetActive(true);
             insidePlayer = true;
         }
     }
@@ -28,6 +34,7 @@ public class ItemBox : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            uyari.SetActive(false);
             insidePlayer = false;
         }
     }
@@ -35,7 +42,7 @@ public class ItemBox : MonoBehaviour
     {
         if (Input.GetKeyDown(keyCode) && insidePlayer)
         {
-            itemAmount = player.GetComponent<Inventory>().ItemEkle(item, itemAmount).Item2;
+            itemAmount = playerInventory.ItemEkle(item, itemAmount).Item2;
             if (itemAmount == 0)
             {
                 Destroy(gameObject);

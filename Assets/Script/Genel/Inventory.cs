@@ -98,19 +98,22 @@ public class Inventory : MonoBehaviour
     #endregion
 
     #region Canta
-    public void CantaEkle(int bagAdet)
+    public void CantaEkle(Canta_Item canta_Item)
     {
-        int cantaAdet = 0;
-        for (int e = 0; e < cantaSlot.Count; e++)
+        Canta_Slot canta = null;
+        bool bosCanta = false;
+        for (int e = 0; e < cantaSlot.Count && !bosCanta; e++)
         {
-            if (cantaSlot[e].SlotDolumu())
+            if (!cantaSlot[e].SlotDolumu())
             {
-                cantaAdet++;
+                canta = cantaSlot[e];
+                bosCanta = true;
             }
         }
-        if (cantaAdet < 10)
+        if (bosCanta)
         {
-            for (int e = 0; e < bagAdet; e++)
+            canta.SlotDoldur(canta_Item, canta_Item.bagAdet);
+            for (int e = 0; e < canta_Item.bagAdet; e++)
             {
                 inventorySlot.Add(Instantiate(Canvas_Manager.Instance.bag_Slot, Canvas_Manager.Instance.bagSlotParent));
             }

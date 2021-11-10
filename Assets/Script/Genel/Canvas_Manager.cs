@@ -198,7 +198,7 @@ public class Canvas_Manager : MonoBehaviour
     public Transform skillParent;
     public void AddSkill(Skill_Item skill_Item)
     {
-        Instantiate(skill_Item.skillUI, skillParent).SetSkillUI();
+        Instantiate(skill_Item.skillUI, skillParent).SetSkillUI(skill_Item);
         if (skill_Item.IsPasif())
         {
             skill_Item.UseItem(null, player.myInventory);

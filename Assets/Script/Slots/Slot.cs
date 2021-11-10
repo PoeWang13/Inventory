@@ -14,7 +14,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
     public Transform effectParent;
 
     /*[HideInInspector]*/ public Item item;
-    [HideInInspector] public int itemAmount;
+    /*[HideInInspector]*/ public int itemAmount;
     public TextMeshProUGUI itemAmountText;
     private bool canUseSlot;
 

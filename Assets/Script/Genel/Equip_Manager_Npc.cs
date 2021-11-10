@@ -2,9 +2,10 @@
 
 public class Equip_Manager_Npc : Equip_Manager
 {
-    public Npc npc;
+    private Npc npc;
     private void Start()
     {
+        npc = GetComponent<Npc>();
         EquipAllItems();
     }
     public void ItemEquipNpc(Equip_Item equip_Item)

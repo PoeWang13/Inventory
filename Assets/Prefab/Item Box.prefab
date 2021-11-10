@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &151941703
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 2}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: 0, y: 1.817}
+  m_SizeDelta: {x: 2377.4727, y: 404.348}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &151941705
 Canvas:
@@ -147,9 +147,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Item Box
-
-    Click - <color=red>G</color> -'
+  m_text: Collect - <color=blue>" + keyCode.ToString() + "</color> -
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -176,7 +174,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 430
+  m_fontSize: 222.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -341,10 +339,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3b0d38b64e6ce24299ab534da2d0542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  item: {fileID: 11400000, guid: 4d6c2bb4ac9cd5544a6817245f13cac8, type: 2}
+  item: {fileID: 11400000, guid: 74aa143bac832e54cbb3a7443ab2fca0, type: 2}
   itemAmount: 2
-  insidePlayer: 0
   keyCode: 103
 --- !u!33 &8117193649464050453
 MeshFilter:

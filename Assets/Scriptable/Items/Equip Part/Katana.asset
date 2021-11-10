@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myName: Katana
   myDesc: KatanaKatana
-  myIcon: {fileID: 21300000, guid: 9a2fa8f52078cb7449b93a3dfdf1dcff, type: 3}
+  myIcon: {fileID: 21300000, guid: 828744420e14c7a42a2d66086caf3f4d, type: 3}
   itemType: 5
   itemPrice: 1
   maxAmount: 1
   isPriceTl: 0
   bodyPart: {fileID: 11400000, guid: 2ed049f3970ff224da9820f828d84913, type: 2}
+  skill_Item: {fileID: 0}
   ciftKol: 0
   myStats: []

@@ -24,15 +24,23 @@ public class Tool_Manager : MonoBehaviour
     private Canvas popupCanvas;
     private Vector3 newPos;
     private StringBuilder sb = new StringBuilder();
+    public bool pasifDurum;
 
     private void Start()
     {
-        popupCanvas = popupCanvasObject.GetComponent<Canvas>();
-        newPos = Input.mousePosition + offset;
+        if (!pasifDurum)
+        {
+            popupCanvas = popupCanvasObject.GetComponent<Canvas>();
+            newPos = Input.mousePosition + offset;
+        }
     }
 
     private void Update()
     {
+        if (pasifDurum)
+        {
+            return;
+        }
         FollowCursor();
     }
 
