@@ -1,7 +1,4 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class Fire_Arrow_Object : Skill_Object
 {
@@ -11,7 +8,9 @@ public class Fire_Arrow_Object : Skill_Object
     {
         if (myOwner.manaStat.StatValue >= skill_Fire_Arrow.mana)
         {
+            // Ýðtiyaç duyulan manayý düþ
             myOwner.manaStat.RemoveStatCore(skill_Fire_Arrow.mana);
+            // Kalmýþ slotlarý sil
             for (int e = skill_Fire_Arrow.mySlots.Count - 1; e >= 0; e--)
             {
                 if (skill_Fire_Arrow.mySlots[e] == null)
@@ -19,6 +18,7 @@ public class Fire_Arrow_Object : Skill_Object
                     skill_Fire_Arrow.mySlots.RemoveAt(e);
                 }
             }
+            // Slotlarý kullanýlmaya baþlanmýþ göster.
             for (int e = 0; e < skill_Fire_Arrow.mySlots.Count; e++)
             {
                 skill_Fire_Arrow.mySlots[e].UseCooldDownImage(1);

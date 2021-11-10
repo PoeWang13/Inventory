@@ -1,7 +1,4 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class Buffer_Object : Skill_Object
 {
@@ -9,6 +6,7 @@ public class Buffer_Object : Skill_Object
     public Skill_Buffer skill_Buffer;
     public override void StartSkill(Vector3 direction)
     {
+        // Kalmýþ slotlarý sil
         for (int e = skill_Buffer.mySlots.Count - 1; e >= 0; e--)
         {
             if (skill_Buffer.mySlots[e] == null)
@@ -16,6 +14,7 @@ public class Buffer_Object : Skill_Object
                 skill_Buffer.mySlots.RemoveAt(e);
             }
         }
+        // Slotlarý kullanýlmaya baþlanmýþ göster.
         for (int e = 0; e < skill_Buffer.mySlots.Count; e++)
         {
             skill_Buffer.mySlots[e].SlotButtonInterac(false);

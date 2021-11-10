@@ -1,7 +1,4 @@
-﻿using TMPro;
-using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
+﻿using UnityEngine;
 
 public class Offer_Slot : Slot
 {
@@ -9,16 +6,20 @@ public class Offer_Slot : Slot
     /// teklif slot      : Sol tık - satın alıp inventory gonder
     public override void LeftClick()
     {
+        if (canUseSlot)
+        {
+            return;
+        }
         if (player == null)
         {
             player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         }
-        if (player.myMoney >= item.itemPrice)
+        if (player.CheckMyExp(item.itemPrice))
         {
-            int alinabilirItem = player.myMoney / item.itemPrice;
+            int alinabilirItem = player.HowManyMyExp() / item.itemPrice;
             if (alinabilirItem >= itemAmount)
             {
-                player.myMoney -= itemAmount * item.itemPrice;
+                player.RemoveMyExp(itemAmount * item.itemPrice);
                 myInventory.ItemEkle(item, itemAmount);
                 SlotButtonInterac(false);
             }
@@ -26,7 +27,7 @@ public class Offer_Slot : Slot
             {
                 myInventory.ItemEkle(item, alinabilirItem);
                 SlotAdetItemKullan(alinabilirItem);
-                player.myMoney -= alinabilirItem * item.itemPrice;
+                player.RemoveMyExp(alinabilirItem * item.itemPrice);
                 Canvas_Manager.Instance.UyariYap("You don't take all Offers.");
             }
         }

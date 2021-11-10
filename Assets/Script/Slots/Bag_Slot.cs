@@ -1,15 +1,13 @@
-﻿using TMPro;
-using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
-
+﻿
 public class Bag_Slot : Slot
 {
-    /// taşınabilir slotlar
-    /// bag-key bar-equip-skill-bank-
     /// taşı
     public override void LeftClick()
     {
+        if (canUseSlot)
+        {
+            return;
+        }
         if (coolDownImage.fillAmount > 0)
         {
             Canvas_Manager.Instance.CloseCarrierSlot();
@@ -38,6 +36,10 @@ public class Bag_Slot : Slot
     /// yere at
     public override void MiddleClick()
     {
+        if (canUseSlot)
+        {
+            return;
+        }
         if (item != null)
         {
             if (Canvas_Manager.Instance.IsOpenCarrierSlot())
@@ -59,6 +61,10 @@ public class Bag_Slot : Slot
     /// kullan
     public override void RightClick()
     {
+        if (canUseSlot)
+        {
+            return;
+        }
         if (item != null)
         {
             if (Canvas_Manager.Instance.IsOpenCarrierSlot())

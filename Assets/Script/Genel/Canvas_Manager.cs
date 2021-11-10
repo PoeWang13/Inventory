@@ -6,6 +6,10 @@ using System.Collections.Generic;
 
 public class Canvas_Manager : MonoBehaviour
 {
+    // [SerializeField] private
+    // private
+
+    #region Instance
     private static Canvas_Manager instance;
     public static Canvas_Manager Instance { get { return instance; } }
 
@@ -16,27 +20,26 @@ public class Canvas_Manager : MonoBehaviour
             instance = this;
         }
     }
+    #endregion
 
     #region Panel
-    public List<GameObject> ortakPaneller = new List<GameObject>();
-    public GameObject durumPanel;
-    public GameObject inventoryPanel;
-    public Bag_Slot bag_Slot;
-    public Transform bagSlotParent;
-    public GameObject playerEquipPanel;
-    public GameObject otherEquipPanel;
-    public GameObject skillPanel;
-    public GameObject bankPanel;
-    public TextMeshProUGUI craftTableName;
-    public GameObject craftPanel;
-    public TextMeshProUGUI npcTableName;
-    public GameObject npcPanel;
-    public List<Slot> npcSlots = new List<Slot>();
-    public List<Bank_Slot> bankSlots = new List<Bank_Slot>();
-    public List<Equip_Slot> playerEquipSlot = new List<Equip_Slot>();
-    public List<Slot> otherEquip_Slots = new List<Slot>();
     public Player player;
     public Sprite emptySlotSprite;
+    [SerializeField] private GameObject durumPanel;
+    [SerializeField] private GameObject inventoryPanel;
+    public Bag_Slot bag_Slot;
+    public Transform bagSlotParent;
+    [SerializeField] private GameObject playerEquipPanel;
+    [SerializeField] private GameObject otherEquipPanel;
+    [SerializeField] private GameObject skillPanel;
+    [SerializeField] private GameObject bankPanel;
+    [SerializeField] private TextMeshProUGUI craftTableName;
+    [SerializeField] private GameObject craftPanel;
+    [SerializeField] private TextMeshProUGUI npcTableName;
+    [SerializeField] private GameObject npcPanel;
+    [SerializeField] private List<GameObject> ortakPaneller = new List<GameObject>();
+    [SerializeField] private List<Slot> npcSlots = new List<Slot>();
+    public List<Slot> otherEquip_Slots = new List<Slot>();
     public void OpenDurumPanel()
     {
         OrtakPanelClose();
@@ -54,7 +57,6 @@ public class Canvas_Manager : MonoBehaviour
     {
         OrtakPanelClose();
         durumPanel.SetActive(false);
-        inventoryPanel.SetActive(false);
     }
     public void OpenInventoryPanel()
     {
@@ -77,12 +79,9 @@ public class Canvas_Manager : MonoBehaviour
         OpenInventoryPanel();
         bankPanel.SetActive(true);
     }
-    public void OpenOtherEquipPanel(List<EquipDurum> equipItems, string npcName)
+    public void OpenOtherEquipPanel(List<EquipDurum> equipItems)
     {
-        OpenInventoryPanel();
         otherEquipPanel.SetActive(true);
-        npcTableName.text = npcName;
-
         for (int e = 0; e < otherEquip_Slots.Count; e++)
         {
             otherEquip_Slots[e].SlotBosalt();
@@ -109,22 +108,12 @@ public class Canvas_Manager : MonoBehaviour
         {
             npcSlots[e].SlotDoldur(npcItems[e], 1);
         }
-        for (int e = 0; e < otherEquip_Slots.Count; e++)
-        {
-            otherEquip_Slots[e].SlotBosalt();
-        }
-        for (int e = 0; e < otherEquip_Slots.Count; e++)
-        {
-            if (equipItems[e].equip_Item != null)
-            {
-                otherEquip_Slots[e].SlotDoldur(equipItems[e].equip_Item, 1);
-            }
-        }
+        OpenOtherEquipPanel(equipItems);
     }
     #endregion
 
     #region Carrier Slot
-    public Carrier_Slot carrier_Slot;
+    [SerializeField] private Carrier_Slot carrier_Slot;
     public bool IsOpenCarrierSlot()
     {
         return carrier_Slot.gameObject.activeSelf;
@@ -158,8 +147,8 @@ public class Canvas_Manager : MonoBehaviour
     #endregion
 
     #region Craft
-    public Craft_Slot craft_Slot;
-    public Transform craftSlotParent;
+    [SerializeField] private Craft_Slot craft_Slot;
+    [SerializeField] private Transform craftSlotParent;
     public void OpenCraftList(Craft_List_Conteiner craft_List_Conteiner, string craftListName)
     {
         craftTableName.text = craftListName;
@@ -169,18 +158,19 @@ public class Canvas_Manager : MonoBehaviour
         {
             Destroy(craftSlotParent.GetChild(e).gameObject);
         }
-        for (int e = 0; e < craft_List_Conteiner.craftLists.Count; e++)
+        int amount = craft_List_Conteiner.HowManyCratItem();
+        for (int e = 0; e < amount; e++)
         {
             Craft_Slot craft = Instantiate(craft_Slot, craftSlotParent);
-            craft.SlotDoldur(craft_List_Conteiner.craftLists[e], 1);
+            craft.SlotDoldur(craft_List_Conteiner.ReturnCratItem(e), 1);
             craft.myInventory = player.myInventory;
         }
     }
     #endregion
 
     #region Uyari
-    public GameObject uyariPanel;
-    public TextMeshProUGUI uyariText;
+    [SerializeField] private GameObject uyariPanel;
+    [SerializeField] private TextMeshProUGUI uyariText;
     public void UyariYap(string uyari)
     {
         StartCoroutine(UyariBaslat(uyari));
@@ -195,10 +185,11 @@ public class Canvas_Manager : MonoBehaviour
     #endregion
 
     #region Skill
-    public Transform skillParent;
+    [SerializeField] private Transform skillParent;
+    [SerializeField] private Skill_UI skillUI;
     public void AddSkill(Skill_Item skill_Item)
     {
-        Instantiate(skill_Item.skillUI, skillParent).SetSkillUI(skill_Item);
+        Instantiate(skillUI, skillParent).SetSkillUI(skill_Item);
         if (skill_Item.IsPasif())
         {
             skill_Item.UseItem(null, player.myInventory);
@@ -207,10 +198,10 @@ public class Canvas_Manager : MonoBehaviour
     #endregion
 
     #region Stat
-    public StatUI statPrefab;
-    public Transform statParent;
-    public Image lifeImage;
-    public Image manaImage;
+    [SerializeField] private StatUI statPrefab;
+    [SerializeField] private Transform statParent;
+    [SerializeField] private Image lifeImage;
+    [SerializeField] private Image manaImage;
     public void AddStat(Stat stat)
     {
         Instantiate(statPrefab, statParent).SetStatUI(stat, player);
@@ -234,9 +225,9 @@ public class Canvas_Manager : MonoBehaviour
     #endregion
 
     #region Exp
-    public TextMeshProUGUI levelExp;
-    public TextMeshProUGUI levelPercent;
-    public Image levelImage;
+    [SerializeField] private TextMeshProUGUI levelExp;
+    [SerializeField] private TextMeshProUGUI levelPercent;
+    [SerializeField] private Image levelImage;
     private void Player_OnExpChanced(object sender, MyExp myExp)
     {
         levelExp.text = "My Exp : " + myExp.myLevelExp.ToString();

@@ -1,13 +1,13 @@
-﻿using TMPro;
-using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
-
+﻿
 public class Craft_Slot : Slot
 {
     /// craft slot       : Sol tık - yap
     public override void LeftClick()
     {
+        if (canUseSlot)
+        {
+            return;
+        }
         Craft_Item craft_Item = item as Craft_Item;
         bool yapabilirim = true;
         for (int e = 0; e < craft_Item.craftMalzemes.Count && yapabilirim; e++)

@@ -2,11 +2,11 @@ using UnityEngine;
 using TMPro;
 public class ItemBox : MonoBehaviour
 {
-    private Inventory playerInventory;
-    public Item item;
-    public int itemAmount;
+    [SerializeField] private Item item;
+    [SerializeField] private int itemAmount;
+    [SerializeField] private KeyCode keyCode = KeyCode.B;
     private bool insidePlayer;
-    public KeyCode keyCode = KeyCode.B;
+    private Inventory playerInventory;
     private GameObject uyari;
     private TextMeshProUGUI openingText;
 

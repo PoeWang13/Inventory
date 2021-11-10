@@ -1,11 +1,16 @@
 ﻿using UnityEngine;
-using TMPro;
 
 public class KeyBar_Slot : Slot
 {
+    [Header("Key Bar Part")]
+    public KeyCode keyCode;
     /// taşı
     public override void LeftClick()
     {
+        if (canUseSlot)
+        {
+            return;
+        }
         if (coolDownImage.fillAmount > 0)
         {
             Canvas_Manager.Instance.CloseCarrierSlot();
@@ -34,6 +39,10 @@ public class KeyBar_Slot : Slot
     /// yere at
     public override void MiddleClick()
     {
+        if (canUseSlot)
+        {
+            return;
+        }
         if (item != null)
         {
             if (item is Skill_Item)
@@ -51,6 +60,10 @@ public class KeyBar_Slot : Slot
     /// kullan
     public override void RightClick()
     {
+        if (canUseSlot)
+        {
+            return;
+        }
         if (item != null)
         {
             if (Canvas_Manager.Instance.IsOpenCarrierSlot())
@@ -64,9 +77,6 @@ public class KeyBar_Slot : Slot
             }
         }
     }
-    [Header("Key Bar Part")]
-    public KeyCode keyCode;
-
     // Update
     public void Update()
     {

@@ -1,11 +1,9 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
 
 [System.Serializable]
 public class Skill_Healer : Skill
 {
+    [Header("Skill Healer Atamalarý")]
     public int healAmount;
     public bool isPercent;
 }

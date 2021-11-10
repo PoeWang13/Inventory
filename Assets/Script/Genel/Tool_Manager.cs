@@ -5,6 +5,7 @@ using System.Text;
 
 public class Tool_Manager : MonoBehaviour
 {
+    #region Instance
     private static Tool_Manager instance;
     public static Tool_Manager Instance { get { return instance; } }
 
@@ -14,7 +15,9 @@ public class Tool_Manager : MonoBehaviour
         {
             instance = this;
         }
-    }
+    } 
+    #endregion
+
     [SerializeField] private GameObject popupCanvasObject;
     [SerializeField] private RectTransform popupObject;
     [SerializeField] private TextMeshProUGUI infoText;
@@ -24,23 +27,15 @@ public class Tool_Manager : MonoBehaviour
     private Canvas popupCanvas;
     private Vector3 newPos;
     private StringBuilder sb = new StringBuilder();
-    public bool pasifDurum;
 
     private void Start()
     {
-        if (!pasifDurum)
-        {
-            popupCanvas = popupCanvasObject.GetComponent<Canvas>();
-            newPos = Input.mousePosition + offset;
-        }
+        popupCanvas = popupCanvasObject.GetComponent<Canvas>();
+        newPos = Input.mousePosition + offset;
     }
 
     private void Update()
     {
-        if (pasifDurum)
-        {
-            return;
-        }
         FollowCursor();
     }
 

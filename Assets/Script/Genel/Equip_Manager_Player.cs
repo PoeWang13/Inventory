@@ -1,18 +1,25 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 public class Equip_Manager_Player : Equip_Manager
 {
-    public Inventory myInventory;
-    #region Equip
+    private Inventory myInventory;
+    public List<EquipDurum> equip_Items = new List<EquipDurum>();
     public List<Equip_Slot> equipSlot = new List<Equip_Slot>();
+    private void Start()
+    {
+        myInventory = GetComponent<Inventory>();
+    }
+    #region Equip
+    /// <summary>
+    /// Elbiseyi ilgili slota kurallar(doğru yermi ?, item tek el mi- çift elmi gibi) dağilinde ekler
+    /// </summary>
     public void ItemEquip(Equip_Item equip_Item, Slot mySlot)
     {
         for (int e = 0; e < equipSlot.Count; e++)
         {
             if (equipSlot[e].bodyPart == equip_Item.bodyPart)
             {
-                if (equip_Item.ciftKol)
+                if (equip_Item.IsCiftKol())
                 {
                     int yerLazim = 0;
                     if (equipSlot[e].SlotDolumu())
@@ -84,6 +91,9 @@ public class Equip_Manager_Player : Equip_Manager
             }
         }
     }
+    /// <summary>
+    /// Body parçasının bağlı olduğu equip slotun numarasını geri dönderir.
+    /// </summary>
     public int EquipSlotNo(Body_Part body_Part)
     {
         for (int e = 0; e < equipSlot.Count; e++)
@@ -94,6 +104,18 @@ public class Equip_Manager_Player : Equip_Manager
             }
         }
         return -1;
+    }
+    public void EquipItemsGiy(Body_Part body_Part, Equip_Item equip_Item)
+    {
+        bool giydim = false;
+        for (int e = 0; e < equip_Items.Count && !giydim; e++)
+        {
+            if (equip_Items[e].bodyPart == body_Part)
+            {
+                equip_Items[e].equip_Item = equip_Item;
+                giydim = true;
+            }
+        }
     }
     #endregion
 }

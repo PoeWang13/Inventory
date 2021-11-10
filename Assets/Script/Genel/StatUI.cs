@@ -1,14 +1,13 @@
 ﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class StatUI : MonoBehaviour
 {
-    public Player player;
-    public Stat myStat;
-    public Button upgradeButton;
-    public TextMeshProUGUI statText;
+    private Player player;
+    private Stat myStat;
+    [SerializeField] private Button upgradeButton;
+    [SerializeField] private TextMeshProUGUI statText;
 
     public void SetStatUI(Stat stat, Player pl)
     {

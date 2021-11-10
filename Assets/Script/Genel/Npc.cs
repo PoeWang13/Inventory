@@ -1,18 +1,16 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class Npc : MonoBehaviour
 {
     [Header("Script Atamaları")]
     private bool insidePlayer;
-    public KeyCode keyCode = KeyCode.N;
     private GameObject uyari;
     private TextMeshProUGUI openingText;
+    [SerializeField] private KeyCode keyCode = KeyCode.N;
+    [SerializeField] private List<Item> npcInventoryItems = new List<Item>();
     public List<EquipDurum> equip_Items = new List<EquipDurum>();
-    public List<Stat> myStats = new List<Stat>();
-    public List<Item> npcInventoryItems = new List<Item>();
 
     private void Start()
     {

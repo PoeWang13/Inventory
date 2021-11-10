@@ -1,7 +1,4 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class Healer_Object : Skill_Object
 {
@@ -11,6 +8,7 @@ public class Healer_Object : Skill_Object
     public override void StartSkill(Vector3 direction)
     {
         myOwner.lifeStat.OnStatChanced += LifeStat_OnStatChanced;
+        // Kalmýþ slotlarý sil
         for (int e = skill_Healer.mySlots.Count - 1; e >= 0; e--)
         {
             if (skill_Healer.mySlots[e] == null)
@@ -18,6 +16,7 @@ public class Healer_Object : Skill_Object
                 skill_Healer.mySlots.RemoveAt(e);
             }
         }
+        // Slotlarý kullanýlmaya baþlanmýþ göster.
         for (int e = 0; e < skill_Healer.mySlots.Count; e++)
         {
             skill_Healer.mySlots[e].SlotButtonInterac(false);

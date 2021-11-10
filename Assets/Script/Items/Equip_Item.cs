@@ -10,9 +10,10 @@ public class StatDurum
 [CreateAssetMenu(menuName = "Item/Equip Item")]
 public class Equip_Item : Item
 {
+    [Header("Yapılacak itemler")]
     public Body_Part bodyPart;
-    public Skill_Item skill_Item;
-    public bool ciftKol;
+    [SerializeField] private Skill_Item skill_Item;
+    [SerializeField] private bool ciftKol;
     public List<StatDurum> myStats = new List<StatDurum>();
     public override void UseItem(Slot mySlot, Inventory myInventory)
     {
@@ -24,5 +25,9 @@ public class Equip_Item : Item
         {
             Canvas_Manager.Instance.player.CreateSkillObject(skill_Item);
         }
+    }
+    public bool IsCiftKol()
+    {
+        return ciftKol;
     }
 }

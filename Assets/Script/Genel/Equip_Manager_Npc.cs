@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-
+﻿
 public class Equip_Manager_Npc : Equip_Manager
 {
     private Npc npc;
@@ -8,6 +7,9 @@ public class Equip_Manager_Npc : Equip_Manager
         npc = GetComponent<Npc>();
         EquipAllItems();
     }
+    /// <summary>
+    /// Elbise parçasını göstermek için giyer
+    /// </summary>
     public void ItemEquipNpc(Equip_Item equip_Item)
     {
         for (int e = 0; e < npc.equip_Items.Count; e++)
@@ -19,6 +21,9 @@ public class Equip_Manager_Npc : Equip_Manager
             }
         }
     }
+    /// <summary>
+    /// Tum elbiseleri göstermek için giyer
+    /// </summary>
     public void EquipAllItems()
     {
         for (int e = 0; e < npc.equip_Items.Count; e++)

@@ -1,17 +1,15 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class Craft_Table : MonoBehaviour
 {
     [Header("Script Atamaları")]
-    public string craftListName;
+    [SerializeField] private KeyCode keyCode = KeyCode.C;
+    [SerializeField] private Craft_List_Conteiner craft_List_Conteiner;
+
     private bool insidePlayer;
-    public KeyCode keyCode = KeyCode.C;
     private GameObject uyari;
     private TextMeshProUGUI openingText;
-    public Craft_List_Conteiner craft_List_Conteiner;
 
     private void Start()
     {
@@ -40,7 +38,7 @@ public class Craft_Table : MonoBehaviour
     {
         if (Input.GetKeyDown(keyCode) && insidePlayer)
         {
-            Canvas_Manager.Instance.OpenCraftList(craft_List_Conteiner, craftListName);
+            Canvas_Manager.Instance.OpenCraftList(craft_List_Conteiner, gameObject.name);
         }
     }
 }

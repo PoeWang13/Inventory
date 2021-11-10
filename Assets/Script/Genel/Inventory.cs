@@ -1,6 +1,4 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections.Generic;
 
 [System.Serializable]
@@ -13,10 +11,10 @@ public class Inventory : MonoBehaviour
 {
     public Player player;
     public Equip_Manager_Player equip_Manager_Player;
+    [SerializeField] private List<Bag_Slot> inventorySlot = new List<Bag_Slot>();
+    [SerializeField] private List<Canta_Slot> cantaSlot = new List<Canta_Slot>();
 
-    public List<Bag_Slot> inventorySlot = new List<Bag_Slot>();
-    #region Canta
-    public List<Canta_Slot> cantaSlot = new List<Canta_Slot>();
+    #region Inventory
     /// <summary>
     /// Objenin Inventory'sinde belirtilen itemden kaç adet olduðunu döner.
     /// </summary>
@@ -83,6 +81,9 @@ public class Inventory : MonoBehaviour
         }
         return itemToplam == 0;
     }
+    /// <summary>
+    /// Boþ slot var mý? Varsa kaç adet
+    /// </summary>
     public (bool, int) BosSlotVar()
     {
         int bosSayisi = 0;
@@ -98,10 +99,14 @@ public class Inventory : MonoBehaviour
     #endregion
 
     #region Canta
+    /// <summary>
+    /// Çanta ekliyecek yer varsa çantayý ve ondaki bag miktarý kadar inventory slotunu ekler.
+    /// </summary>
     public void CantaEkle(Canta_Item canta_Item)
     {
         Canta_Slot canta = null;
         bool bosCanta = false;
+        int bag = canta_Item.BagAdetSayisi();
         for (int e = 0; e < cantaSlot.Count && !bosCanta; e++)
         {
             if (!cantaSlot[e].SlotDolumu())
@@ -112,13 +117,16 @@ public class Inventory : MonoBehaviour
         }
         if (bosCanta)
         {
-            canta.SlotDoldur(canta_Item, canta_Item.bagAdet);
-            for (int e = 0; e < canta_Item.bagAdet; e++)
+            canta.SlotDoldur(canta_Item, bag);
+            for (int e = 0; e < bag; e++)
             {
                 inventorySlot.Add(Instantiate(Canvas_Manager.Instance.bag_Slot, Canvas_Manager.Instance.bagSlotParent));
             }
         }
     }
+    /// <summary>
+    /// Çantayý eðer yedekte çanta varsa en geriden baþlayarak içindekilerle beraber siler.
+    /// </summary>
     public bool CantaSil(Canta_Slot canta_Slot)
     {
         int cantaAdet = 0;
@@ -131,7 +139,7 @@ public class Inventory : MonoBehaviour
         }
         if (cantaAdet > 1)
         {
-            int bagAdet = (canta_Slot.item as Canta_Item).bagAdet;
+            int bagAdet = (canta_Slot.item as Canta_Item).BagAdetSayisi();
             for (int e = inventorySlot.Count - 1; e >= 0 && bagAdet != 0; e--)
             {
                 bagAdet--;

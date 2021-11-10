@@ -6,17 +6,17 @@ using UnityEngine.EventSystems;
 public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     [HideInInspector] public Inventory myInventory;
-    public Button slotButton;
-    public Image itemImage;
+    [SerializeField] private Button slotButton;
+    [SerializeField] private Image itemImage;
     public Image usedImage;
     public Image coolDownImage;
-    public GameObject kilitImage;
-    public Transform effectParent;
+    [SerializeField] private GameObject kilitImage;
+    [SerializeField] private Transform effectParent;
 
-    /*[HideInInspector]*/ public Item item;
-    /*[HideInInspector]*/ public int itemAmount;
-    public TextMeshProUGUI itemAmountText;
-    private bool canUseSlot;
+    [HideInInspector] public Item item;
+    [HideInInspector] public int itemAmount;
+    [SerializeField] private TextMeshProUGUI itemAmountText;
+    [HideInInspector] public bool canUseSlot;
 
     #region Skill
     public void UseCooldDownImage(float coolDown)

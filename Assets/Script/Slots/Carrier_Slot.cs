@@ -3,7 +3,7 @@
 public class Carrier_Slot : Slot
 {
     public Slot tasinanSlot;
-    public Vector3 offSet = new Vector3(-10, 10, 0);
+    [SerializeField] private Vector3 offSet = new Vector3(-10, 10, 0);
     [SerializeField] private Canvas popupCanvas;
     [SerializeField] private int padding = 10;
     private Vector3 newPos;

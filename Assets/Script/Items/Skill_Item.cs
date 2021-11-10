@@ -7,8 +7,7 @@ using System.Collections.Generic;
 public class Skill_Item : Item
 {
     public Skill_Object skill_Object;
-    public GameObject slotEffect;
-    public Skill_UI skillUI;
+    [SerializeField] private GameObject slotEffect;
     public override void UseItem(Slot mySlot, Inventory myInventory)
     {
         myInventory.player.CreateSkillObject(this);

@@ -8,7 +8,14 @@ public class EquipDurum
 }
 public class Equip_Manager : MonoBehaviour
 {
-    public Owner myOwner;
+    private Owner myOwner;
+    private void Start()
+    {
+        myOwner = GetComponent<Owner>();
+    }
+    /// <summary>
+    /// Elbiseyi giyince elbisedeki statları giyer.
+    /// </summary>
     public void Equip(Equip_Item equip_Item)
     {
         for (int e = 0; e < equip_Item.myStats.Count; e++)
@@ -31,6 +38,9 @@ public class Equip_Manager : MonoBehaviour
             }
         }
     }
+    /// <summary>
+    /// Elbiseyi çıkartınca elbisedeki statları çıkartır.
+    /// </summary>
     public void UnEquip(Equip_Item equip_Item)
     {
         for (int e = 0; e < equip_Item.myStats.Count; e++)

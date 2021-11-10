@@ -1,11 +1,11 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class Bank : MonoBehaviour
 {
     [Header("Script Atamaları")]
-    public bool insidePlayer;
-    public KeyCode keyCode = KeyCode.B;
+    [SerializeField] private KeyCode keyCode = KeyCode.B;
+    private bool insidePlayer;
     private GameObject uyari;
     private TextMeshProUGUI openingText;
 

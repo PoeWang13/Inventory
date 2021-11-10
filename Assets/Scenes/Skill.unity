@@ -3667,7 +3667,6 @@ MonoBehaviour:
   infoText: {fileID: 1598894173}
   offset: {x: -25, y: 25, z: 0}
   padding: 10
-  pasifDurum: 0
 --- !u!114 &1273607380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3694,13 +3693,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bd62de3aeba7fb4b8c0fcac51b729ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ortakPaneller:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 2092136877}
-  - {fileID: 0}
-  - {fileID: 0}
+  player: {fileID: 1315519855}
+  emptySlotSprite: {fileID: 21300000, guid: f673a1ba21390a44b8b2f4f4396475a1, type: 3}
   durumPanel: {fileID: 6424693547542901856}
   inventoryPanel: {fileID: 558888334}
   bag_Slot: {fileID: 6085782290713688222, guid: 6c48af9051abfa9469da6c16ee63b1da, type: 3}
@@ -3713,50 +3707,19 @@ MonoBehaviour:
   craftPanel: {fileID: 0}
   npcTableName: {fileID: 0}
   npcPanel: {fileID: 0}
+  ortakPaneller:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 2092136877}
+  - {fileID: 0}
+  - {fileID: 0}
   npcSlots:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  bankSlots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  playerEquipSlot:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -3780,14 +3743,13 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  player: {fileID: 1315519855}
-  emptySlotSprite: {fileID: 21300000, guid: f673a1ba21390a44b8b2f4f4396475a1, type: 3}
   carrier_Slot: {fileID: 1699525581}
   craft_Slot: {fileID: -3614013831691161986, guid: 24441bbf64e9bcb4e878336b135c2eaf, type: 3}
   craftSlotParent: {fileID: 0}
   uyariPanel: {fileID: 1175749560}
   uyariText: {fileID: 585361832}
   skillParent: {fileID: 668368950}
+  skillUI: {fileID: 4351905557009563840, guid: c65260c419c80c54e9ea988f51f4c3bc, type: 3}
   statPrefab: {fileID: -5702951070947452602, guid: 2495dd19b7f4755469c32478e2b84b03, type: 3}
   statParent: {fileID: 6424693546451612478}
   lifeImage: {fileID: 1346628855}
@@ -3984,7 +3946,6 @@ MonoBehaviour:
     statName: Mana
     myStatCore: 0
   canMove: 1
-  canTurn: 0
   skillStart: 0
   exitPos: {fileID: 337561193}
   myStats:
@@ -3998,18 +3959,15 @@ MonoBehaviour:
     myStatCore: 0
   - statName: Speed
     myStatCore: 100
-  myMoney: 10
   myFreeStat: 0
   myLevel: 0
   myLevelExp: 0
-  myLevelExpMax: 10
   levelIncreaceAmount: 5
   freeStatIncreaceAmount: 5
   myInventory: {fileID: 1315519854}
   equip_Manager_Player: {fileID: 1315519856}
   speedMove: 10
   speedTurn: 110
-  direction: {x: 0, y: 0, z: 0}
   skilller: []
 --- !u!114 &1315519856
 MonoBehaviour:
@@ -4023,8 +3981,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8e13af318b00b0479ef218d8cc62374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myOwner: {fileID: 1315519855}
-  myInventory: {fileID: 1315519854}
   equipSlot:
   - {fileID: 0}
   - {fileID: 0}

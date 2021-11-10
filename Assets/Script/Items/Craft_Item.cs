@@ -12,15 +12,20 @@ public class CraftMalzeme
 [CreateAssetMenu(menuName = "Item/Craft Item")]
 public class Craft_Item : Item
 {
+    [Header("Yapılacak item.")]
     public Item myObject;
+    [Header("Yapılacak item adedi.")]
     public int yapimAdet;
-    public Craft_List_Conteiner myContainer;
+
+    [Header("Icinde yer aldığı listenin Containeri.")]
+    [SerializeField] private Craft_List_Conteiner myContainer;
+    [Header("Yapılacak item için gerekli item ve sayıları.")]
     public List<CraftMalzeme> craftMalzemes = new List<CraftMalzeme>();
     public override void UseItem(Slot mySlot, Inventory myInventory)
     {
-        if (!myContainer.craftLists.Contains(this))
+        if (!myContainer.HasCratItem(this))
         {
-            myContainer.craftLists.Add(this);
+            myContainer.AddCratItem(this);
             mySlot.SlotBosalt();
         }
         else

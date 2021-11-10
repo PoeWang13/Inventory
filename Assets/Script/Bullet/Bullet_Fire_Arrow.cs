@@ -1,13 +1,10 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class Bullet_Fire_Arrow : MonoBehaviour
 {
     [Header("Script Atamaları")]
-    public int speed = 10;
-    public Vector3 direction;
+    [SerializeField] private int speed = 10;
+    private Vector3 direction = Vector3.forward;
 
     public void SetBullet(Vector3 direction)
     {

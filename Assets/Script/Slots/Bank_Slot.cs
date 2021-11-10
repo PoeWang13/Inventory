@@ -1,13 +1,12 @@
-﻿using TMPro;
-using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
-
+﻿
 public class Bank_Slot : Slot
 {
-    /// bank slot        : Sol tık - taşı + orta tık - at + orta tık - inventory gonder
     public override void LeftClick()
     {
+        if (canUseSlot)
+        {
+            return;
+        }
         if (Canvas_Manager.Instance.IsOpenCarrierSlot())
         {
             if (Canvas_Manager.Instance.CarrieedSlot() is Bag_Slot)
@@ -58,6 +57,10 @@ public class Bank_Slot : Slot
     }
     public override void MiddleClick()
     {
+        if (canUseSlot)
+        {
+            return;
+        }
         if (item != null)
         {
             if (Canvas_Manager.Instance.IsOpenCarrierSlot())
@@ -71,6 +74,10 @@ public class Bank_Slot : Slot
     /// inventory gonder
     public override void RightClick()
     {
+        if (canUseSlot)
+        {
+            return;
+        }
         if (Canvas_Manager.Instance.IsOpenCarrierSlot())
         {
             Canvas_Manager.Instance.CloseCarrierSlot();
