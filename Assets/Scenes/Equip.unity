@@ -15849,10 +15849,14 @@ MonoBehaviour:
     sol klik ile inventory'de yer varsa inventory'e ekleyin.\n<color=red>Equip Stat
     Ekleme</color>\n1-Projede Equip Itemine t\u0131kla\n2-My Stat k\u0131sm\u0131na
     olmas\u0131n\u0131 istedi\u011Fin statlar\u0131 ekleyip ve Y\xFCzde veya sabit
-    bool'unu ayarla.\n<color=red>Equip Skill Ekleme</color>\n1-Projede Equip Itemine
-    t\u0131kla\n2-Skill Item k\u0131sm\u0131na olmas\u0131n\u0131 istedi\u011Fin
-    skill itemi ekle.\n3-Oyun esnas\u0131nda Equip window'da iteme sag click yap\u0131p
-    skili \xE7al\u0131\u015Ft\u0131r. (Geli\u015Ftirme a\u015Famas\u0131nda)"
+    bool'unu ayarla.\n<color=red>Equip Set Olu\u015Fturma</color>\n1-Equiplerin set
+    numaralar\u0131n\u0131 \xF6zde\u015F yapmal\u0131y\u0131z.\n2-Ayn\u0131 Equip
+    set i\xE7in 4 tip kontrol vard\u0131r.\n3-Bu kontroller Dress-Weapon-Accessuars-Complete
+    \u015Feklindedir.\n4-Bu kontroller tek bir set \xFCzerinde veya ayr\u0131 ayr\u0131
+    yap\u0131labilinir.\n<color=red>Equip Set Stat-Skill Ekleme</color>\n1-Projede
+    Equip Itemine t\u0131kla\n2-Set Number'a s\u0131radaki setin numaras\u0131n\u0131
+    gir.\n3-GameManager Objesinde EquipSetStatHolder scriptinde listeye o numaraya
+    ait statlar\u0131 ve/veya skilleri gir."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
