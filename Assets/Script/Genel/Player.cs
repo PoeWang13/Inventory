@@ -28,7 +28,7 @@ public class Player : Owner
     [SerializeField] private int myLevel;
     [SerializeField] private int myLevelExp;
     private int myLevelExpMax = 10;
-    [SerializeField] private int levelIncreaceAmount = 5;
+    [SerializeField] private int levelExpMaxIncreaceAmount = 5;
     [SerializeField] private int freeStatIncreaceAmount = 5;
     [HideInInspector] public Inventory myInventory;
     [SerializeField] private Equip_Manager_Player equip_Manager_Player;
@@ -134,7 +134,7 @@ public class Player : Owner
             FreeStatAdd();
             myLevel++;
             myLevelExp -= myLevelExpMax;
-            myLevelExpMax += levelIncreaceAmount;
+            myLevelExpMax += levelExpMaxIncreaceAmount;
         }
         OnExpChanced?.Invoke(this, new MyExp { myLevelExp = myLevelExp, myLevel = myLevel });
     }

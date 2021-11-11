@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myName: Container Skill Fire Arrow
   myDesc: Learn Skill Fire Arrow
-  myIcon: {fileID: 21300000, guid: 2cd906d1acd9fe544943d1a99f042f0b, type: 3}
+  myIcon: {fileID: 21300000, guid: 7165f980b95de3f4fabff6b5f538cc4b, type: 3}
   itemType: 0
   itemPrice: 1
   maxAmount: 1

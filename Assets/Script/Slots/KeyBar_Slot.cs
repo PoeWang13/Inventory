@@ -66,14 +66,17 @@ public class KeyBar_Slot : Slot
         }
         if (item != null)
         {
-            if (Canvas_Manager.Instance.IsOpenCarrierSlot())
+            if (coolDownImage.fillAmount == 0)
             {
-                Canvas_Manager.Instance.CloseCarrierSlot();
-            }
-            item.UseItem(this, Canvas_Manager.Instance.player.myInventory);
-            if (!(item is Skill_Item))
-            {
-                SlotItemKullan();
+                if (Canvas_Manager.Instance.IsOpenCarrierSlot())
+                {
+                    Canvas_Manager.Instance.CloseCarrierSlot();
+                }
+                item.UseItem(this, Canvas_Manager.Instance.player.myInventory);
+                if (!(item is Skill_Item))
+                {
+                    SlotItemKullan();
+                }
             }
         }
     }
@@ -84,10 +87,17 @@ public class KeyBar_Slot : Slot
         {
             if (item != null)
             {
-                item.UseItem(this, Canvas_Manager.Instance.player.myInventory);
-                if (!(item is Skill_Item))
+                if (coolDownImage.fillAmount == 0)
                 {
-                    SlotItemKullan();
+                    if (Canvas_Manager.Instance.IsOpenCarrierSlot())
+                    {
+                        Canvas_Manager.Instance.CloseCarrierSlot();
+                    }
+                    item.UseItem(this, Canvas_Manager.Instance.player.myInventory);
+                    if (!(item is Skill_Item))
+                    {
+                        SlotItemKullan();
+                    }
                 }
             }
         }

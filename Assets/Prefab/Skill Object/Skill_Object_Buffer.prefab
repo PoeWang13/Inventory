@@ -51,6 +51,6 @@ MonoBehaviour:
     coolDown: 2
     coolDownNext: 0
     mySlots: []
-    buffName: Str
+    buffName: Int
     buffAmount: 100
     isPercent: 0

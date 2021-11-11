@@ -13,10 +13,11 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
     [SerializeField] private GameObject kilitImage;
     [SerializeField] private Transform effectParent;
 
-    [HideInInspector] public Item item;
-    [HideInInspector] public int itemAmount;
+    public Item item;
+    public int itemAmount;
     [SerializeField] private TextMeshProUGUI itemAmountText;
     [HideInInspector] public bool canUseSlot;
+    public Sprite emptySlotSprite;
 
     #region Skill
     public void UseCooldDownImage(float coolDown)
@@ -43,14 +44,17 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
         this.item = item;
         itemAmount = amount;
         itemImage.sprite = item.myIcon;
-        itemAmountText.text = amount.ToString();
+        if (amount != 1)
+        {
+            itemAmountText.text = amount.ToString();
+        }
         item.HasEffect(this);
     }
     public void SlotBosalt()
     {
         itemAmount = 0;
         itemAmountText.text = "";
-        itemImage.sprite = Canvas_Manager.Instance.emptySlotSprite;
+        itemImage.sprite = emptySlotSprite;
         if (effectParent.childCount != 0)
         {
             Destroy(effectParent.GetChild(0).gameObject);
@@ -69,7 +73,10 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
             if (itemAmount > amount)
             {
                 itemAmount -= amount;
-                itemAmountText.text = itemAmount.ToString();
+                if (amount != 1)
+                {
+                    itemAmountText.text = amount.ToString();
+                }
                 return amount;
             }
             else
@@ -97,13 +104,19 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
         {
             amount = amount - (item.maxAmount - itemAmount);
             itemAmount = item.maxAmount;
-            itemAmountText.text = itemAmount.ToString();
+            if (amount != 1)
+            {
+                itemAmountText.text = amount.ToString();
+            }
             return amount;
         }
         else
         {
             itemAmount += amount;
-            itemAmountText.text = itemAmount.ToString();
+            if (amount != 1)
+            {
+                itemAmountText.text = amount.ToString();
+            }
             return 0;
         }
     }

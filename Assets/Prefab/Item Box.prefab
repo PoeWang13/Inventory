@@ -339,8 +339,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3b0d38b64e6ce24299ab534da2d0542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 74aa143bac832e54cbb3a7443ab2fca0, type: 2}
-  itemAmount: 2
+  havuzum: {fileID: 11400000, guid: eb6612a03867937448f78250e4b1ac46, type: 2}
+  item: {fileID: 0}
+  itemAmount: 1
   keyCode: 103
 --- !u!33 &8117193649464050453
 MeshFilter:

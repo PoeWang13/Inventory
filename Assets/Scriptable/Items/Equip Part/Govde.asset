@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5eba6e69504d941b449c27ac256a48, type: 3}
+  m_Name: Govde
+  m_EditorClassIdentifier: 
+  myName: Govde
+  myDesc: GovdeGovde
+  myIcon: {fileID: 21300000, guid: 2224c319b557f344d89fec206cd99bcc, type: 3}
+  itemType: 5
+  itemPrice: 1
+  maxAmount: 1
+  isPriceTl: 0
+  setNumber: 0
+  bodyPart: {fileID: 11400000, guid: a4f8a63c4f638ed4d83fb603cd47d123, type: 2}
+  skill_Item: {fileID: 0}
+  ciftKol: 0
+  myEquipStats: []

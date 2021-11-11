@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myName: Container_Skill_Buffer
   myDesc: Learn Skill Buffer
-  myIcon: {fileID: 21300000, guid: 7ebb87fd1581f3147afa96a49d4a990a, type: 3}
+  myIcon: {fileID: 21300000, guid: 91f097ddd55eef34c834a6da3c4eb95f, type: 3}
   itemType: 0
   itemPrice: 1
   maxAmount: 1

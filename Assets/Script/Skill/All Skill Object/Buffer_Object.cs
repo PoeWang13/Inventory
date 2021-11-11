@@ -29,6 +29,17 @@ public class Buffer_Object : Skill_Object
             myOwner.MyStat(skill_Buffer.buffName).AddStat(skill_Buffer.buffAmount);
         }
     }
+    public override void StopSkill()
+    {
+        if (skill_Buffer.isPercent)
+        {
+            myOwner.MyStat(skill_Buffer.buffName).RemoveYuzdeStat(skill_Buffer.buffAmount);
+        }
+        else
+        {
+            myOwner.MyStat(skill_Buffer.buffName).RemoveStat(skill_Buffer.buffAmount);
+        }
+    }
     #region Slot - Pasif
     public override void AddSkillSlot(Slot slot)
     {

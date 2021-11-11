@@ -8,14 +8,15 @@ public class Npc : MonoBehaviour
     private bool insidePlayer;
     private GameObject uyari;
     private TextMeshProUGUI openingText;
+    private Equip_Manager equip_Manager;
     [SerializeField] private KeyCode keyCode = KeyCode.N;
     [SerializeField] private List<Item> npcInventoryItems = new List<Item>();
-    public List<EquipDurum> equip_Items = new List<EquipDurum>();
 
     private void Start()
     {
         uyari = transform.GetChild(0).gameObject;
         openingText = uyari.GetComponentInChildren<TextMeshProUGUI>();
+        equip_Manager = uyari.GetComponent<Equip_Manager>();
         openingText.text = "Talking - <color=red>" + keyCode.ToString() + "</color> -";
     }
     private void OnTriggerEnter(Collider other)
@@ -39,7 +40,7 @@ public class Npc : MonoBehaviour
     {
         if (Input.GetKeyDown(keyCode) && insidePlayer)
         {
-            Canvas_Manager.Instance.OpenNpcPanel(npcInventoryItems, equip_Items, gameObject.name);
+            Canvas_Manager.Instance.OpenNpcPanel(npcInventoryItems, equip_Manager.equip_Items, gameObject.name);
         }
     }
 }

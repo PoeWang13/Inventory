@@ -1,6 +1,6 @@
 using UnityEngine;
 using TMPro;
-public class ItemBox : MonoBehaviour
+public class ItemBox : PoolObje
 {
     [SerializeField] private Item item;
     [SerializeField] private int itemAmount;

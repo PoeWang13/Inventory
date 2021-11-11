@@ -25,6 +25,10 @@ public class Skill_Object : MonoBehaviour
     {
 
     }
+    public virtual void StopSkill()
+    {
+
+    }
     public virtual void ClearSlots()
     {
 

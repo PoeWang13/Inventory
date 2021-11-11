@@ -19,11 +19,8 @@ MonoBehaviour:
   itemPrice: 1
   maxAmount: 1
   isPriceTl: 0
+  setNumber: 0
   bodyPart: {fileID: 11400000, guid: 6bbcedfaa11b276499465d69a27f5e08, type: 2}
   skill_Item: {fileID: 0}
   ciftKol: 0
-  myStats:
-  - stat:
-      statName: Armor
-      myStatCore: 1
-    isPercent: 0
+  myEquipStats: []

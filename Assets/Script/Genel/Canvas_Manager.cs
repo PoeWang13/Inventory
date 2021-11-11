@@ -24,7 +24,6 @@ public class Canvas_Manager : MonoBehaviour
 
     #region Panel
     public Player player;
-    public Sprite emptySlotSprite;
     [SerializeField] private GameObject durumPanel;
     [SerializeField] private GameObject inventoryPanel;
     public Bag_Slot bag_Slot;
@@ -237,6 +236,7 @@ public class Canvas_Manager : MonoBehaviour
     }
     private void Start()
     {
+
         player.OnExpChanced += Player_OnExpChanced;
         player.lifeStat.OnStatChanced += Player_OnLifeStatChanced;
         player.manaStat.OnStatChanced += Player_OnManaStatChanced;

@@ -1,4 +1,5 @@
-﻿
+﻿using UnityEngine;
+
 public class Skill_Slot : Slot
 {
     /// skill slot       : Sol tık - taşı + sağ tık - kullan
@@ -42,6 +43,10 @@ public class Skill_Slot : Slot
     public override void RightClick()
     {
         if (canUseSlot)
+        {
+            return;
+        }
+        if ((item as Skill_Item).IsPasif())
         {
             return;
         }

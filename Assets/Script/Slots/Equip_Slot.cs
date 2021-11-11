@@ -35,6 +35,7 @@ public class Equip_Slot : Slot
                             equip_Manager_Player.Equip(equip_Item);
                             canvas_Manager.UsedCarrierSlot(this);
                             equip_Manager_Player.equip_Items[6].equip_Item = equip_Item;
+                            equip_Manager_Player.ControlSet();
                         }
                         else if (yerlerDolumu == 1)
                         {
@@ -55,6 +56,7 @@ public class Equip_Slot : Slot
                             SlotDoldur(equip_Item, 1);
                             equip_Manager_Player.Equip(equip_Item);
                             equip_Manager_Player.equip_Items[5].equip_Item = equip_Item;
+                            equip_Manager_Player.ControlSet();
                         }
                         else if (yerlerDolumu == 2)
                         {
@@ -71,6 +73,7 @@ public class Equip_Slot : Slot
                                 equip_Manager_Player.Equip(equip_Item);
                                 equip_Manager_Player.equip_Items[5].equip_Item = equip_Item;
                                 equip_Manager_Player.equip_Items[6].equip_Item = null;
+                                equip_Manager_Player.ControlSet();
                             }
                         }
                     }
@@ -84,16 +87,18 @@ public class Equip_Slot : Slot
                             canvas_Manager.CarrieedSlot().SlotDoldur(equip_Item1, 1);
                             equip_Manager_Player.equipSlot[5].SlotBosalt();
                         }
-                        if (SlotDolumu())
+                        else if (SlotDolumu())
                         {
                             Equip_Item equip_Item2 = item as Equip_Item;
                             equip_Manager_Player.UnEquip(equip_Item2);
                             equip_Manager_Player.equip_Items[5].equip_Item = null;
                             canvas_Manager.CarrieedSlot().SlotDoldur(equip_Item2, 1);
                         }
+                        canvas_Manager.CarrieedSlot().SlotBosalt();
                         equip_Manager_Player.Equip(equip_Item);
                         SlotDoldur(equip_Item, 1);
                         equip_Manager_Player.equip_Items[6].equip_Item = equip_Item;
+                        equip_Manager_Player.ControlSet();
                     }
                     else
                     {
@@ -109,6 +114,7 @@ public class Equip_Slot : Slot
                         SlotDoldur(equip_Item, 1);
                         equip_Manager_Player.Equip(equip_Item);
                         equip_Manager_Player.EquipItemsGiy(bodyPart, equip_Item);
+                        equip_Manager_Player.ControlSet();
                     }
                 }
             }
@@ -123,6 +129,8 @@ public class Equip_Slot : Slot
                     canvas_Manager.player.myInventory.ItemEkle(item, 1);
                     equip_Manager_Player.UnEquip(item as Equip_Item);
                     SlotBosalt();
+                    equip_Manager_Player.EquipItemsGiy(bodyPart, null);
+                    equip_Manager_Player.ControlSet();
                 }
             }
         }

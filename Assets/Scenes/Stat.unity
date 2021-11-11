@@ -159,7 +159,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 0}
+  m_SizeDelta: {x: 1158.7, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &86128258
 MonoBehaviour:
@@ -322,7 +322,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 683, y: -10}
-  m_SizeDelta: {x: 500, y: 622.5272}
+  m_SizeDelta: {x: 1158.7445, y: 622.5272}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &172892916
 MonoBehaviour:
@@ -1419,7 +1419,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1315519855}
-  emptySlotSprite: {fileID: 21300000, guid: f673a1ba21390a44b8b2f4f4396475a1, type: 3}
   durumPanel: {fileID: 6424693547542901856}
   inventoryPanel: {fileID: 0}
   bag_Slot: {fileID: 6085782290713688222, guid: 6c48af9051abfa9469da6c16ee63b1da, type: 3}
@@ -1628,6 +1627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1315519855}
+  firstCanta: {fileID: 0}
   equip_Manager_Player: {fileID: 1315519856}
   inventorySlot:
   - {fileID: 0}
@@ -1683,10 +1683,11 @@ MonoBehaviour:
     myStatCore: 0
   - statName: Speed
     myStatCore: 100
+  otherPlayer: 0
   myFreeStat: 0
   myLevel: 0
   myLevelExp: 0
-  levelIncreaceAmount: 5
+  levelExpMaxIncreaceAmount: 5
   freeStatIncreaceAmount: 5
   myInventory: {fileID: 1315519854}
   equip_Manager_Player: {fileID: 1315519856}
@@ -1705,6 +1706,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8e13af318b00b0479ef218d8cc62374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  equipSetStatHolder: {fileID: 0}
+  equip_Items: []
   equipSlot:
   - {fileID: 0}
   - {fileID: 0}
@@ -1717,6 +1720,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  equipSetSkillSlot: []
 --- !u!1 &1327740028
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,10 +10,18 @@ public class ItemDurum
 public class Inventory : MonoBehaviour
 {
     public Player player;
+    public Canta_Item firstCanta;
     public Equip_Manager_Player equip_Manager_Player;
     [SerializeField] private List<Bag_Slot> inventorySlot = new List<Bag_Slot>();
     [SerializeField] private List<Canta_Slot> cantaSlot = new List<Canta_Slot>();
 
+    private void Start()
+    {
+        if (firstCanta != null)
+        {
+            CantaEkle(firstCanta);
+        }
+    }
     #region Inventory
     /// <summary>
     /// Objenin Inventory'sinde belirtilen itemden kaç adet olduðunu döner.
@@ -64,7 +72,7 @@ public class Inventory : MonoBehaviour
                 continue;
             }
         }
-        return (-1, itemAmount - itemCount);
+        return (-1, itemCount);
     }
     /// <summary>
     /// Objenin Inventory'sinden item siler.true ise itemin hepsi silinmiþ demektir.

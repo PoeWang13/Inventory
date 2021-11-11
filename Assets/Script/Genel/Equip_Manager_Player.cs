@@ -1,12 +1,14 @@
 ﻿using System.Collections.Generic;
-
+using UnityEngine;
 public class Equip_Manager_Player : Equip_Manager
 {
     private Inventory myInventory;
-    public List<EquipDurum> equip_Items = new List<EquipDurum>();
     public List<Equip_Slot> equipSlot = new List<Equip_Slot>();
-    private void Start()
+    public List<Skill_Slot> equipSetSkillSlot = new List<Skill_Slot>();
+    public List<string> equipSetSkill_Object = new List<string>();
+    public override void Start()
     {
+        base.Start();
         myInventory = GetComponent<Inventory>();
     }
     #region Equip
@@ -114,6 +116,37 @@ public class Equip_Manager_Player : Equip_Manager
             {
                 equip_Items[e].equip_Item = equip_Item;
                 giydim = true;
+            }
+        }
+    }
+    public override void HaveSetEquip(int setPartNumber, bool isSet, Skill_Item skill_Item)
+    {
+        equipSetSkillSlot[setPartNumber].gameObject.SetActive(isSet);
+        if (isSet)
+        {
+            equipSetSkill_Object[setPartNumber] = skill_Item.skill_Object.name + "(Clone)";
+            equipSetSkillSlot[setPartNumber].SlotDoldur(skill_Item, 1);
+            skill_Item.skill_Object.GetComponent<Skill_Object>().AddSkillSlot(equipSetSkillSlot[setPartNumber]);
+            if (skill_Item.IsPasif())
+            {
+                skill_Item.UseItem(null, myInventory);
+                equipSetSkillSlot[setPartNumber].SlotButtonInterac(false);
+            }
+        }
+        else
+        {
+            if (equipSetSkillSlot[setPartNumber].SlotDolumu())
+            {
+                if (skill_Item.IsPasif())
+                {
+                    equipSetSkillSlot[setPartNumber].SlotButtonInterac(true);
+                    // Skilin etkisini kaldırt.
+                    Transform tr = transform.Find(equipSetSkill_Object[setPartNumber]);
+                    tr.GetComponent<Skill_Object>().StopSkill();
+                    Destroy(tr.gameObject);
+                    equipSetSkill_Object[setPartNumber] = "";
+                }
+                equipSetSkillSlot[setPartNumber].SlotBosalt();
             }
         }
     }

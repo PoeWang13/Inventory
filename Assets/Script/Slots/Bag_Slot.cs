@@ -67,14 +67,17 @@ public class Bag_Slot : Slot
         }
         if (item != null)
         {
-            if (Canvas_Manager.Instance.IsOpenCarrierSlot())
+            if (coolDownImage.fillAmount == 0)
             {
-                Canvas_Manager.Instance.CloseCarrierSlot();
-            }
-            item.UseItem(this, Canvas_Manager.Instance.player.myInventory);
-            if (!(item is Skill_Item))
-            {
-                SlotItemKullan();
+                if (Canvas_Manager.Instance.IsOpenCarrierSlot())
+                {
+                    Canvas_Manager.Instance.CloseCarrierSlot();
+                }
+                item.UseItem(this, Canvas_Manager.Instance.player.myInventory);
+                if (!(item is Skill_Item))
+                {
+                    SlotItemKullan();
+                }
             }
         }
     }
